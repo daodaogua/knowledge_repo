@@ -14,6 +14,7 @@
 - 听,记,答技能学习[见下]
 - 做题,然后精研法练习
   - 每日一篇
+  - 能力分析
 - 模考
   - 每半月/月,section
   - 考前1~2周,3~5次完整考试
@@ -486,6 +487,7 @@
   - 每周练习综合1次
   - 每周练习独立题2篇
     - 4个题型依次练到
+  - 阅读自己的文章并打分,批改(薄弱点分析[1没有思路,2语言表达]),提升
 - 模考
   - 考前2周开始,每星期1次
   - 考前要有综合模考
@@ -620,6 +622,7 @@
     - 例证+对比
     - 因果+对比
 - 高分表达
+  - [][高分表达摘抄]
 - 首尾段
   - 首段
     - 三要素
@@ -645,6 +648,54 @@
       - do you agree or disagree with the following statement?The rules that the whole societies today expect young people to follow and obey are too strict
       - you have long been a friend with someone.If he or she does something that you don't like, should you still befriend him or her?
 
+** TOEFL reading
+**** 考试介绍
+- 3~4篇文章(60m~80m)
+  - 每篇20m,12~14题[1题最多不超过3m,平均1m30s]
+  - [[./阅读题型介绍.png]][题型介绍]
+
+**** 复习方案
+- 单词
+  - 必备词
+  - 逻辑词
+  - 进阶词
+- 技巧流程熟练
+  - 每两天一个题型
+  - 错题分析
+    - 技能掌握
+- 综合运用
+  - 每天一篇阅读
+  - 错题分析
+    - 词汇
+    - 速度
+    - 技能掌握
+
+**** 基础技能
+- 题前阅读法
+  - skimming+scanning(skimming>>scanning)
+  - 首段
+    - 如果不太长,每句都要看
+    - 找背景/论点/目的,...
+    - 做笔记
+  - 剩下段落
+    - 段首句
+      - 做笔记
+    - 中间部分
+      - [[结构式阅读]]
+
+- 结构式阅读
+
+- 线性思维原则
+  - 先论点,后论据
+  - 先总括,后分类
+  - 先抽象,后具体
+
+**** 综合流程
+**** 解题模式
+- 宏观解题思路
+  - 贪心
+  - 迭代
+**** 模式库
 
 ** 工具
 - APP
