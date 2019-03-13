@@ -1,12 +1,29 @@
 ** 托福四大板块
 
-- [[listening.org][听力]]
-
 - [[reading.org][阅读]]
+  - 3~4篇
+  - 12~14question,each
+  - 60~80m
+
+- [[listening.org][听力]]
+  - 4~6篇lecture,2~3conversation
+  - 6,each,5,each
+  - 60~90m
+
+- break
+  - 10m
 
 - [[speaking.org][口语]]
+  - 6task
+    - 2 independent
+    - 4 integrated
+  - 20m
 
 - [[writing.org][写作]]
+  - 2task
+    - 1 integrated
+    - 1 independent
+  - 20m, 30m
 
 ** 学习工具
 - APP

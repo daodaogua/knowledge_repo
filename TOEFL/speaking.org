@@ -1,0 +1,465 @@
+** TOEFL speaking
+**** 考试介绍
+- 2 task 独立题
+  - 1,2
+    - 准备时间15s,回答时间45s
+- 4 task 综合题
+  - 3,4
+    - 阅读时间45/50s,听力时间60~80s,准备时间30s,回答时间60s
+  - 5,6
+    - 听力时间60~90s,准备时间20s,回答时间60s
+- 评分标准
+  1. 总体陈述印象(表达能力)
+     - 流畅清晰
+     - 发音标准
+     - 语速适中
+     - 语音语调自然
+       - 一般 句中用扬调或平调
+       - 一般 句末用降调
+  2. 语言运用(语言能力)
+     - 语法
+     - 句型:简单和复杂的语言结构
+     - 词汇
+       - 多用副词:副词==结构词,accidently,hopefully,...
+       - 词组>单词
+       - 书面语/=口语
+  3. 话题发展(思维能力)
+     - 内容:完成任务
+     - 逻辑+结构:表达连贯一致,容易看出各观点的关系和思想之间的衔接
+
+**** 复习方案
+- 每天解决一个语法问题
+- 所有课程看完至少两遍
+- 所有语料背诵熟练
+- demo全部背熟练
+- 半月 +
+  - 制定严格的作息计划
+  - 每天2道TPO的某一综合题题型,限时练习
+  - 每天10分钟跟读模仿(Bobo完美50的demo/TPO听力)
+  - 一二题刷机经,每天各5道机经,共十道题
+- 半月计划
+  - 重点机经题目每题练习1遍,必须限时练习
+  - 大范围机经中的难题列提纲,重点表达要造句
+  - 每天2套TPO的综合题,限时练习
+  - 每天10min跟读模仿练发音
+
+
+**** 独立题
+- task
+  - task1
+    - type
+      - 描述,经历类   ::经历描述类
+      - 开放式观点    ::观点类
+      - 三选一        ::观点类
+  - task2
+    - type
+      - 二选一        ::观点类
+- 流程
+  - 准备时间15s
+    - 想框架(写关键词)
+    - 想细节,案例
+  - 回答45s
+    - 经历,描述类
+      1. 1个主题句: 把主题词放入题干,简化后,变成陈述句
+      2. 描述事物/记叙事件
+      3. 重要性/影响
+    - 开放式观点类
+      1. 一个主题句
+      2. 主体段落一(解决问题,提出建议)
+      3. 主体段落二(解决方案,解释建议)
+    - 三选一/二选一类
+      1. 一个主题句(不建议中立)
+      2. 分论1+解释+(案例)
+      3. 分论2+解释+(案例)
+
+- 语料
+  - 逻辑四大招
+    - 目标
+      - 如何开展段落
+      - 如何逻辑严谨
+      - 如何内容充实
+    - 内容
+      - 解释原因
+        - because/as/the reason why.../since/due to
+      - 亮明结果
+        - so/therefore/as a result/thus/in this way
+      - 具体案例
+        - for example/for instance/take...as an example/such as
+      - 对比反方
+        - on the contrary/comparatively/speaking/however/on the other hand
+  - 八大万能理由
+    - 目标
+      - 收集最高频论点
+      - 收集亮点表达
+      - 收集应用示范
+    - 内容
+      - 压力
+        - because: under great pressure; exhausted; feel stressful
+        - so: get relaxed; feel comfortable; be in a good mood; get refreshed and when I go back to study, I can be more efficient; release or reduce pressure
+      - 健康
+        - go to the gym to work out/ exercise
+        - get rid of disease and illnesses
+        - good rest/sleep brings higher productivity
+        - mental health
+        - physical health
+        - keep fit
+      - 交朋友
+        - students should make more friends; not feel lonely
+        - different opinions and perspectives, learn from each other, make an improvement together
+        - meet new friends on the internet, social media
+        - sometimes, friends have more experience
+        - have similar interests
+        - have fun/ hang out together
+        - help each other
+      - 文化
+        - learn different cultures
+        - different perspectives and views of the world
+        - food culture
+        - broaden horizons
+        - know more about the outside world
+        - exchange ideas and share opinions
+      - 安全
+        - safty always comes first
+        - security guards
+        - should not take the risk
+      - 学生永远穷
+        - students usually don't have stable income/full-time jobs
+        - take a part-time job
+        - take part in an internship, a job related to my major
+        - have stronger purchasing power comparing with people in the past
+        - pay for the expensive tuition; pay for rent
+        - learn to be financially independent
+        - help parents share/ease financial burden
+      - 保护隐私
+        - do not want others to hear private conversations
+        - dont' want others to disturb the peace of my life
+        - people should respect each other's privacy
+        - private room, have more privacy
+        - different schedules, night owl/person
+        - inner feelings
+      - 兴趣爱好
+        - in line with my own interest
+        - would be difficult to do a good job without interest or motivation
+        - enjoy life;do something I really like
+        - sth is boring and tedious, feel bored
+        - the source of enthusiasm and passion
+        - good mood and higher efficiency
+  - 六大高频话题
+    - 目标
+      - 梳理近年高频话题
+      - 收集高频话题论点+语料
+      - 迁移话题语料
+    - 内容
+      - 环保/自然/污染
+        - 绿地/环保的重要性:green space filter pollutants and dust from the air;provide shade and lower temperatures in urban areas;reduce erosion of soil into our waterways
+        - 应该怎么做:plant more trees; recycle waste; take public transportation
+        - 污染危害:air is often very smoggy in China; water pollution is serious;marine life is severely affected by river/ocean pollution
+      - 科技
+        - benefits: large storage; easy to carry ebooks around; makes info accessible;listen to music, connect to social network,watch movies;get relaxed; contact people or get info instantly; small devices are easy to carry
+        - disadvantages: being distracted; be addicted;low productivity;unhealthy-poor eyesight
+        - importance: both work and academic fields require people to be good at using technological devices; contact family/friends instantly; relax oneself,reduce pressure
+      - film/take pics/videos/acting
+        - why choose to film/take pics/videos/act: personal interest, love to film/take pics/videos/act,举例personal time经常做这些事情/从小学习这些
+        - benefits: relax myself, reduce pressure; make friends;good visualization to illustrate things, more vivid; improve appreciation of art
+      - 交流方式
+        - 面对面/语音交流benefits: get feedback immediately; let others know my feelings more directly; more genuine
+        - 面对面/语音交流disadvantages: sometimes awkward;introvert, feels uncomfortable of talking to people
+        - 文字交流benefits: more time to organize your language and thoughts;easy to keep record
+        - 文字交流disadvantages: cannot get feedback immediately; feels impersonal; hard to know how others really feel
+      - 分歧
+        - how to solve: put yourself into one's shoes, try to understand their perspectives; talk openly and sincerely; bothe make compromise
+        - 分歧vs.友情: having disagreement/argument is common; having disagreement is a good thing: learn how to accept and respect others' opinions; strengthen friendship
+      - 人物
+        - 人物角色/职业: professor; businessman; doctor; lawyer; solider; teacher; family; friends
+        - 性格特点/品质: selfish; impolite; loud; honest; humorous; friendly;intelligent; easy-going; patient; passionate
+        - 以上人物角色+品质写成分论点段落
+
+**** 综合题
+- task 3
+  - 评分标准
+    - 26+
+      - 阅读+听力内容,结构完整(黄金分割)
+      - 语法错误极少or为零(三单,she/he,名词复数)
+    - 23+
+      - 听力内容为主, 阅读有主题
+      - 较流畅
+  - introduction(basics)
+    1. reading one passage:75~100 words, 40/45s
+       - 形式: announcement, notice, proposal...
+       - 内容: 基础建设, 后勤服务, 课外活动, 课程改革
+       - 结构: 1个主题+2个细节
+       - 作用: 作为听力的背景知识
+       - 笔记: 1个主题+2细节
+       - 口语模板 (<20s)
+         - The student in the reading suggests/thinks the university should __阅读中的主题__, because __R1__, and __R2__. In the dialogue, the man/woman agrees/disagrees with the plan in the reading passage.
+    2. listen to one dialogue:2 people(a male student&a female student),60~80s
+       - 一男生一女生
+       - 其中一人support或oppose阅读中的观点
+       - 重点听记其中一人的观点
+       - 核心(结构): 1+2,1个观点,2个理由
+       - 笔记模板: 十字: she | he
+         - signal words:
+           - 听力中主要发言人表明观点:
+             - 赞同: I can see why; I can understand that...; it makes sense...
+             - 反对: shocked; I don't know why; I don't get ...; I don't understand...; I don't think it should/would...ridiculous, unnecessary
+           - 听力中的结构词/过渡词(transitional words):
+             - the first thing...; and the other thing...
+             - firstly...;secondly...
+             - on the one hand...;on the other hand...
+       - 口语模板
+         - (20s) first of all, he/she thinks that __R1(3~4句话)__
+         - sencond, he/she  continues saying that __R2(3~4句话)__
+         - therefore/in a word/all in all, the man/woman doesn't agree/ agrees on __阅读中的内容__
+    3. preparation: 30s
+       - 整理笔记: 1+2
+       - 浏览笔记
+    4. response: 60s
+       - 看表注意时间
+       - 流畅度,语速,清晰
+       - 统一时态: 统一过去时 or 统一现在时
+       - she 与 he 的区别
+       - 三单v+s勿忘
+  - 能力提升
+    - 校园黄金表达
+
+- task 4
+  - 评分标准
+    - 26+
+      - 阅读定义+听力案例完整
+      - 流畅度高
+      - 时态正确
+    - 23+
+      - 听力案例尽量完整,阅读说题目
+      - 较流畅
+  - introduction
+    - read one passage: 75~100words, 45/50s
+      - 形式
+        - 题目: 学术名词
+        - 正文: 对此名词的解释和展开
+      - 内容
+        - 学术话题(类似于美国大学专业课教科书的节选)
+      - 作用
+        - 为听力提供铺垫
+      - 常考科目
+        - 心理学+,动物学-,教育学+,市场营销学+,社会学+,植物学-
+        - +:social science, -: natural science
+    - listen to one lecture: 1 professor, 60~80s
+      - 1个教授(professor)讲话(lecture)
+      - 核心(结构):
+        - 1+1:一个学术概念+一个具体案例(长)
+          - official task 4 "1+2"先不练: TPO47,43,41,33,31,19,13,10,8,5,4,2
+      - 教授举例的4个来源
+        - 经典实验(现在时)-
+        - 教授自己的故事,亲身经历(过去时)+
+        - 教授听说(同事,邻居,室友等)的故事(过去时)+
+        - 动植物在自然界中的生存和活动规律(现在时)-
+      - 笔记方法
+        - social science
+          - 时间点|具体时间
+            - 以听为主,记为辅
+            - 以具体时间为主,时间点为辅
+        - natural science
+          - 一句话的笔记量: 2个词左右
+          - 只记新鲜信息,上文提到的信息划线连接
+          - 长变短, ex. info, pic, prof, st, pop
+          - 用符号, ex. +,-...
+    - preparation: 30s
+      - social science
+        - 主题句圈出
+        - 时间点和事件圈出
+        - 匹配模板
+    - response: 60s
+      - social science 模板
+        - (<15s) in the lecture, the professor gives one example to illustrate __阅读中的题目/题干__.
+          *or* [__学术名词__ means/refers to/ is a specific/special kind/ type of  __学术名词定义__]
+        - (第一个时间点),_____.
+        - (第二个时间点),_____.
+        - (第三个时间点),_____.
+        - after all/ in the end/ finally/ so, __(结论)__
+- task 5
+  - 评分标准
+    - 26+
+      - 听力1+2+P结构完整,细节充实(黄金分割)
+      - 流畅度高
+      - 三单,she,he,suggest语法正确
+      - 个人观点有逻辑
+    - 23+
+      - 听力尽量完整,P部分要说出元音
+      - 较流畅
+  - instroduction
+    - listen to one dialogue: 2 people(a man & a woman),60~90s
+      - 形式: 2人对话
+        - 此题的主角不是固定的, 方案来源不确定
+      - 内容: 1+2
+        - 一个问题, 两个方案
+        - 五大常考困难
+          - time or schedule conflict ------- 25.00%
+            - 场景1/情景词汇1
+              - 找人替/1 to find another person to replace him or her/take her or his place. /2 to find another person to help him or her.
+            - 场景2/情景词汇2
+              - 改日期/reschedule=to change the plan/schedule: 1. 推迟: put off/ delay/ postpone the activity to the next week. /2 提前: do/finish doing sth. before a specific time
+          - paper problem ------------------- 14.47%
+            - 场景1/情景词汇1
+              - 时间紧/1.his time is tight;2.his schedule is busy;3.he has a busy schedule;4.his paper will be due by/on..the due day;5.he must submit the paper tomorrow/soon/next week.
+              - 任务重/he has to finish two important papers at the same time/in a very short time
+            - 情景2/情景词汇2
+              - 没资料/a reference book
+            - 情景3/情景资料3
+              - 电脑坏/1.his computer broke down, and there is no backup copy.;2.the computer repair shop/computer emergency help desk.
+            - 情景4/情景资料4
+              - 搞不定/he can't finish/submit his paper on time
+            - 情景5/情景词汇5
+              - 要延期/1.to ask the professor for an extension;2.to put off the deadline
+          - course registration problem ----- 13.16%
+          - dorm problem -------------------- 9.21%
+          - car problem --------------------- 9.21%
+        - 八大建议句型
+          - why/how系列: why not...?/why don't you...?/how about...?/what about...?
+          - 虚拟系列: if I were you, I'd...
+          - 曾经系列: have you ever thought about/tried/asked...?
+          - 可能系列: is there any chance..? is it possible to...?
+          - "I"系列: I suggest/recommend...
+          - "you"系列: you'd better..;you should/can/might...
+          - 祈使句系列: try to...;think about...
+          - "thing" or "point"系列: one thing is..;the other point is...
+      - 笔记模板
+        - 十字表:she & he, 两个人都有内容
+          - Problem, Suggest1/2, advantage1/2, disadvantage1/2
+    - preparation: 20s
+      - 圈出笔记中,P,S1,S2,R1+,R1-,R2+,R2-
+      - 回忆模板
+    - response: 60s
+      - 模板
+        - (<35s)
+          - the woman/man in this conversation expresses her/his problem that __P(3句)__.
+          - the first solution is that he/she could __S1(1~2)__
+          - sencond, she/he can also __S2(1~2)__
+        - ()
+          - personally, I think the 1st/2nd suggestion is better, because __(R1+/R2+)./Futhermore,__(R1-/R2-)./Also,__(自己解释)__
+      - 常见语法错误
+        - she/he
+        - 三单
+        - she/he suggests + doing/n
+        - she/he suggests + (that) s.b. + do
+- task 6
+  - 评分标准
+    - 26+
+      - 听力1+2结构完整,细节充实(黄金分割)
+      - *流畅度高*
+    - 23+
+      - 听力尽量完整
+      - 较流畅
+  - introduction
+    - listen to one lecture: 1 professor, 90~120s
+      - 主论点+2分论+2案例
+      - 词汇量大, 长难句多
+      - 对考生要求: 背单词!
+        - 听到的单词要快速准确地反映出其中文意思
+        - 较长较难的单词要会说
+      - 听力时间长,信息量大,细节多
+        - 对考生要求:记笔记
+          - 笔记量要大
+          - 笔记要抓得住重点
+            - 多记名词or动词
+    - preparation: 20s
+      - 画出主论点
+      - 画出分论点2
+      - 画出案例2
+    - response: 60s
+      - 模板
+        - __主论点(1句)__
+        - first, __1st分论(1~2句).for example,__1st案例(3~5句).
+        - (留25s)second,__2nd分论(1~2句)__.for instance,__2nd案例(3~5句)__.
+
+**** 基础能力补充
+- 逻辑连接词
+
+- 语法常错项纠正
+  - 三单: V+s
+  - 时态
+  - He/She
+  - 名词:单复数/可数,不可数(many,much)
+  - 冠词: a/an,the
+  - 主从句人称,动词不一致
+  - 介词: for, to
+  - 非谓语动词形式: to done / doing /done
+
+- 校园黄金表达
+  - 基础建设类
+    - parking lots
+    - create inconveniences
+    - small construction projects often take place when classes are in session
+    - I'm all for it
+    - We've had a bunch of snowstorms in a row
+    - dispose of the old bikes
+    - free up space on the rack/ bicycle parking rack
+    - lock a bike to a signpost
+    - to reserve a practice room
+    - keep the volume down
+    - socialize with...
+    - the food they serve doesn't have much flavor
+    - in an effort to reduce heating cost, the university plans to...
+    - make some improvement in...
+    - cost-saving measures
+    - energy-efficient
+    - interfere with student activities
+    - drafty windows that let the cold in
+    - campus recreation center
+    - reasonable | a reasonable price
+  - 后勤服务类
+    - save money in the long run
+    - I'm more comfortable with the old-fashioned way of studying
+    - an overworked doctor/ he has overworked for weeks
+    - receives quality treatment/ spend quality time with somebody
+    - wait until the following week
+    - a lot of demand for treatment
+    - prohibit doing
+    - disruptive behavior
+    - interfere with everyone's concentration
+    - housing renovations
+  - 课外活动类
+    - students are awarded their diplomas at the graduation ceremony
+    - It's hard to keep track of the information = keep up with what's happening on campus
+    - competitions will motivate students in the choir to pursue a higher...
+    - the hall is too small to accommodate the growing audience or friends and family members
+    - receive their diplomas individually
+    - news coverage
+    - hardly anyone reads this section
+    - deal with tons of paperwork
+    - given the art department's limited budget, it just doesn't make sense to hire a new full-time professor to teach sculpture for only a handful of students
+    - enter singing competitions
+    - standard of excellence in singing
+    - strengthen the reputation of ...
+    - a local corporation
+    - to work for a company
+    - to establish relationship with...
+    - to develop leadership and organizational skills
+    - a big loss for ...
+    - optional courses - required courses
+    - secondary fields
+
+**** 工具使用
+- demo vs. 机经
+  - 两者必须同时进行
+  - 两者同等重要
+  - 两者所投入的时间精力要科学合理
+- 精练 vs. 范练
+  - 精练: 效率最高,提升最快
+  - 泛练: 利用碎片时间,精练的辅助
+    - 可练习: demo练习步骤的5,6&机经题目练习
+- demo
+  1. 默读,查字典,完全理解意思,逻辑,结构
+  2. 标注好的表达(词汇,短语,句子)
+  3. 跟着音频,反复跟读模仿(以意群,句子为单位),保证发音,语调,语速与音频高度一致
+  4. 整篇跟读模仿3~5遍
+  5. 不看文本,不听音频,自然地唠嗑几遍
+  6. 熟练,流畅地背诵全文,达到good
+- 机经
+  1. 头脑风暴图: 审题-->列提纲: 搜寻语料+逻辑四大招
+  2. 录音: 15s/45s, 小白期过后,不可写逐字稿
+  3. 听-->记录错误: 内容(文章结构&逻辑四大招)
+  4. 听-->记录错误: 语法(当天目标)
+  5. 听-->记录错误: 语音(发音,语调,语速)
+  6. 再录音:45s
+  每天练习机经个数: 2-3道左右
+  从离你考试一年前左右的机经练起
