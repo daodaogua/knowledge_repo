@@ -4,11 +4,20 @@
   - 3~4篇
   - 12~14question,each
   - 60~80m
+- 阅读改
+  - 减少共12题
+    - 主要是词汇,细节题,句子简化题
+  - 54~72m
 
 - [[listening.org][听力]]
   - 4~6篇lecture,2~3conversation
   - 6,each,5,each
   - 60~90m
+- 听力改
+  - section1
+    - 1conversation+1lecture
+  - section2
+    - 1Conversation+2lecture
 
 - break
   - 10m
@@ -18,6 +27,11 @@
     - 2 independent
     - 4 integrated
   - 20m
+
+- 口语改
+  - 4task
+    - 1independent(task2)
+    - 4integrated(task3,4,6)
 
 - [[writing.org][写作]]
   - 2task
