@@ -1,0 +1,4474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>readme</title>
+<!-- 2021-03-09 二 19:56 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="iwos-ml" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">readme</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 第1章 绪论</a>
+<ul>
+<li><a href="#sec-1-1">1.1. 引言</a></li>
+<li><a href="#sec-1-2">1.2. 基本术语</a></li>
+<li><a href="#sec-1-3">1.3. 假设空间</a></li>
+<li><a href="#sec-1-4">1.4. 归纳偏好</a></li>
+<li><a href="#sec-1-5">1.5. 发展历程</a></li>
+<li><a href="#sec-1-6">1.6. 应用现状</a></li>
+<li><a href="#sec-1-7">1.7. 阅读材料</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. 第2章 模型评估与选择</a>
+<ul>
+<li><a href="#sec-2-1">2.1. 经验误差与过拟合</a></li>
+<li><a href="#sec-2-2">2.2. 评估方法</a></li>
+<li><a href="#sec-2-3">2.3. 性能度量</a></li>
+<li><a href="#sec-2-4">2.4. 比较检验</a></li>
+<li><a href="#sec-2-5">2.5. 偏差与方差</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. 第3章 线性模型</a>
+<ul>
+<li><a href="#sec-3-1">3.1. 基本形式</a></li>
+<li><a href="#sec-3-2">3.2. 线性回归</a></li>
+<li><a href="#sec-3-3">3.3. 对数几率回归</a></li>
+<li><a href="#sec-3-4">3.4. 线性判别分析</a></li>
+<li><a href="#sec-3-5">3.5. 多分类学习</a></li>
+<li><a href="#sec-3-6">3.6. 类别不平衡问题</a></li>
+<li><a href="#sec-3-7">3.7. 阅读材料</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. 第4章 决策树</a>
+<ul>
+<li><a href="#sec-4-1">4.1. 基本流程</a></li>
+<li><a href="#sec-4-2">4.2. 划分选择</a>
+<ul>
+<li><a href="#sec-4-2-1">4.2.1. 信息增益</a></li>
+<li><a href="#sec-4-2-2">4.2.2. 增益率</a></li>
+<li><a href="#sec-4-2-3">4.2.3. 基尼指数</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-3">4.3. 剪枝处理</a>
+<ul>
+<li><a href="#sec-4-3-1">4.3.1. 预剪枝</a></li>
+<li><a href="#sec-4-3-2">4.3.2. 后剪枝</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-4">4.4. 连续与缺失值</a>
+<ul>
+<li><a href="#sec-4-4-1">4.4.1. 连续值处理</a></li>
+<li><a href="#sec-4-4-2">4.4.2. 缺失值处理</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-5">4.5. 多变量决策树</a></li>
+<li><a href="#sec-4-6">4.6. 阅读材料</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. 第5章 神经网络</a>
+<ul>
+<li><a href="#sec-5-1">5.1. 神经元模型</a></li>
+<li><a href="#sec-5-2">5.2. 感知机与多层网络</a></li>
+<li><a href="#sec-5-3">5.3. 误差逆传播算法</a></li>
+<li><a href="#sec-5-4">5.4. 全局最小与局部最小</a></li>
+<li><a href="#sec-5-5">5.5. 其他常见的神经网络</a>
+<ul>
+<li><a href="#sec-5-5-1">5.5.1. RBF网络</a></li>
+<li><a href="#sec-5-5-2">5.5.2. ART网络</a></li>
+<li><a href="#sec-5-5-3">5.5.3. SOM网络</a></li>
+<li><a href="#sec-5-5-4">5.5.4. 级联相关网络</a></li>
+<li><a href="#sec-5-5-5">5.5.5. Elman 网络</a></li>
+<li><a href="#sec-5-5-6">5.5.6. Boltzmann机</a></li>
+<li><a href="#sec-5-5-7">5.5.7. 深度学习</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-6">6. 第6章 支持向量机</a>
+<ul>
+<li><a href="#sec-6-1">6.1. 间隔与支持向量</a></li>
+<li><a href="#sec-6-2">6.2. 对偶问题</a></li>
+<li><a href="#sec-6-3">6.3. 核函数</a></li>
+<li><a href="#sec-6-4">6.4. 软间隔与正则化</a></li>
+<li><a href="#sec-6-5">6.5. 支持向量回归</a></li>
+<li><a href="#sec-6-6">6.6. 核方法</a></li>
+<li><a href="#sec-6-7">6.7. 阅读材料</a></li>
+</ul>
+</li>
+<li><a href="#sec-7">7. 第7章 贝叶斯分类器</a>
+<ul>
+<li><a href="#sec-7-1">7.1. 贝叶斯决策论</a></li>
+<li><a href="#sec-7-2">7.2. 极大似然估计</a></li>
+<li><a href="#sec-7-3">7.3. 朴素贝叶斯分类器</a></li>
+<li><a href="#sec-7-4">7.4. 半朴素贝叶斯分类器</a></li>
+<li><a href="#sec-7-5">7.5. 贝叶斯网</a>
+<ul>
+<li><a href="#sec-7-5-1">7.5.1. 结构</a></li>
+<li><a href="#sec-7-5-2">7.5.2. 学习</a></li>
+<li><a href="#sec-7-5-3">7.5.3. 推断</a></li>
+</ul>
+</li>
+<li><a href="#sec-7-6">7.6. EM算法</a></li>
+</ul>
+</li>
+<li><a href="#sec-8">8. 第8章 集成学习</a>
+<ul>
+<li><a href="#sec-8-1">8.1. 个体与集成</a></li>
+<li><a href="#sec-8-2">8.2. Boosting</a></li>
+<li><a href="#sec-8-3">8.3. Bagging和随机森林</a>
+<ul>
+<li><a href="#sec-8-3-1">8.3.1. Bagging</a></li>
+<li><a href="#sec-8-3-2">8.3.2. 随机森林</a></li>
+</ul>
+</li>
+<li><a href="#sec-8-4">8.4. 结合策略</a>
+<ul>
+<li><a href="#sec-8-4-1">8.4.1. 平均法</a></li>
+<li><a href="#sec-8-4-2">8.4.2. 投票法</a></li>
+<li><a href="#sec-8-4-3">8.4.3. 学习法</a></li>
+</ul>
+</li>
+<li><a href="#sec-8-5">8.5. 多样性</a>
+<ul>
+<li><a href="#sec-8-5-1">8.5.1. 误差-分歧分解</a></li>
+<li><a href="#sec-8-5-2">8.5.2. 多样性度量</a></li>
+<li><a href="#sec-8-5-3">8.5.3. 多样性增强</a></li>
+</ul>
+</li>
+<li><a href="#sec-8-6">8.6. 阅读材料</a></li>
+</ul>
+</li>
+<li><a href="#sec-9">9. 第9章 聚类</a>
+<ul>
+<li><a href="#sec-9-1">9.1. 聚类任务</a></li>
+<li><a href="#sec-9-2">9.2. 性能度量</a></li>
+</ul>
+</li>
+<li><a href="#sec-10">10. TO-DO</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 第1章 绪论</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 引言</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>机器学习/machine learning
+<ul class="org-ul">
+<li>主要研究特定的"学习算法", 即在计算机上从数据产生模型的算法.
+</li>
+</ul>
+</li>
+<li>学习算法/learning algorithm
+</li>
+<li>模型/model
+<ul class="org-ul">
+<li>泛指: 从数据中学得的结果.
+</li>
+</ul>
+</li>
+<li>模式
+<ul class="org-ul">
+<li>局部性结果(例如, 一条规则).
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 基本术语</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>数据集/data set
+<ul class="org-ul">
+<li>示例/样本的集合(?并非要求样例)
+</li>
+</ul>
+</li>
+<li>示例/instance/样本/sample
+<ul class="org-ul">
+<li>一个事件或对象的描述
+</li>
+</ul>
+</li>
+<li>属性/attribute/特征/feature
+<ul class="org-ul">
+<li>反映事件或对象在某个方面的表现或性质的事项
+</li>
+</ul>
+</li>
+<li>属性值/attribute value/特征值
+<ul class="org-ul">
+<li>属性上的取值
+</li>
+</ul>
+</li>
+<li>属性空间/attribute space/样本空间/sample space/输入空间
+<ul class="org-ul">
+<li>属性张成的空间
+</li>
+</ul>
+</li>
+<li>特征向量/feature vector
+<ul class="org-ul">
+<li>一个示例, 也称为一个特征向量
+</li>
+</ul>
+</li>
+<li>维数/dimensionality
+</li>
+<li>学习/learning/训练/training
+<ul class="org-ul">
+<li>从数据中学得模型的过程
+</li>
+</ul>
+</li>
+<li>训练数据/training data
+<ul class="org-ul">
+<li>训练过程使用的数据
+</li>
+</ul>
+</li>
+<li>训练样本/training sample/训练示例/training instance
+<ul class="org-ul">
+<li>训练过程中使用的样本
+</li>
+</ul>
+</li>
+<li>训练集/training set
+<ul class="org-ul">
+<li>训练数据组成的集合
+</li>
+</ul>
+</li>
+<li>假设/hypothesis
+<ul class="org-ul">
+<li>对应了关于数据的某种潜在规律的学得模型
+</li>
+</ul>
+</li>
+<li>真相/真实/ground<sub>truth</sub>
+<ul class="org-ul">
+<li>数据的潜在规律本身
+</li>
+</ul>
+</li>
+<li>学习过程
+<ul class="org-ul">
+<li>在所有假设组成的空间进行搜索的过程,目的是为了找出或逼近真相
+</li>
+</ul>
+</li>
+<li>学习器/learner
+<ul class="org-ul">
+<li>模型
+</li>
+</ul>
+</li>
+<li>标记/label
+<ul class="org-ul">
+<li>示例的结果信息
+</li>
+</ul>
+</li>
+<li>样例/example
+<ul class="org-ul">
+<li>拥有了标记信息的样例
+</li>
+</ul>
+</li>
+<li>标记空间/label space/输出空间
+<ul class="org-ul">
+<li>所有标记的集合
+</li>
+</ul>
+</li>
+<li>分类/classification
+<ul class="org-ul">
+<li>欲预测的值是离散值
+</li>
+</ul>
+</li>
+<li>回归/regression
+<ul class="org-ul">
+<li>欲预测的值是连续值
+</li>
+</ul>
+</li>
+<li>二分类/binary classification
+<ul class="org-ul">
+<li>只涉及两个类别的分类任务
+</li>
+</ul>
+</li>
+<li>正类/positive class
+<ul class="org-ul">
+<li>二分类中的其中一类别
+</li>
+</ul>
+</li>
+<li>反类/negative class
+<ul class="org-ul">
+<li>二分类中除正类之外的另一类别
+</li>
+</ul>
+</li>
+<li>多分类/multi-class classification
+<ul class="org-ul">
+<li>多类别识别
+</li>
+</ul>
+</li>
+<li>测试/testing
+<ul class="org-ul">
+<li>学得模型后使用其进行预测的过程(?)
+</li>
+</ul>
+</li>
+<li>测试样本/testing sample
+<ul class="org-ul">
+<li>被预测的样本
+</li>
+</ul>
+</li>
+<li>聚类/clustering
+<ul class="org-ul">
+<li>训练集中只有样本, 没有标记, 将样本分成若干组(?)
+</li>
+</ul>
+</li>
+<li>簇/cluster
+<ul class="org-ul">
+<li>聚类中的每一组
+</li>
+</ul>
+</li>
+<li>监督学习/supervised learning
+<ul class="org-ul">
+<li>训练数据拥有标记
+</li>
+</ul>
+</li>
+<li>无监督学习/unsupervised learning
+<ul class="org-ul">
+<li>训练数据没有标记
+</li>
+</ul>
+</li>
+<li>泛化能力/generalization
+<ul class="org-ul">
+<li>学得模型适用于新样本的能力
+</li>
+</ul>
+</li>
+<li>分布/distribution
+</li>
+<li>独立同分布/independent and identically distributed, i.i.d
+<ul class="org-ul">
+<li>每个样本都是独立地从这个分布上采样获得, 称样本独立同分布
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> 假设空间</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>归纳/induction
+<ul class="org-ul">
+<li>特殊到一般的"泛化"过程, 即从具体的事实归结出一般性规律
+</li>
+</ul>
+</li>
+<li>演绎/deduction
+<ul class="org-ul">
+<li>从一般到特殊的"特化/specialization"过程, 即从基础原理推演出具体情况
+</li>
+</ul>
+</li>
+<li>归纳学习/inductive learning
+<ul class="org-ul">
+<li>归纳的过程, "从样例中学习"是归纳学习
+</li>
+<li>狭义: 学得概念; 广义: 学得"黑箱"模型
+</li>
+</ul>
+</li>
+<li>概念/concept
+</li>
+<li>概念学习/概念形成
+<ul class="org-ul">
+<li>从训练数据中学得概念
+</li>
+</ul>
+</li>
+<li>版本空间/version space
+<ul class="org-ul">
+<li>同训练集"匹配/fit"的假设空间
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> 归纳偏好</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>归纳偏好/inductive bias/偏好
+<ul class="org-ul">
+<li>机器学习算法在学习过程中对某种类型假设的偏好
+</li>
+</ul>
+</li>
+<li>奥卡姆剃刀/Occam's razor
+<ul class="org-ul">
+<li>一种常用的, 自然科学研究中最基本的原则(假设偏好), "若有多个假设与观察一致, 则选最简单的那个"
+</li>
+</ul>
+</li>
+<li>没有免费的午餐/No Free Lunch Theorem/NFL
+<ul class="org-ul">
+<li>在所有"问题"出现的机会相同, 或所有问题同等重要的 <b>前提</b> 下, 所有学习算法的期望性能都跟随机胡猜差不多.
+</li>
+<li>现实问题通常不满足NFL的前提, 但NFL的寓意是 脱离具体问题, 空泛的谈论"什么学习算法更好"毫无意义, 因为若考虑所有潜在的问题(所有样本出现概览一样?), 则所有学习算法一样好.
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> 发展历程</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>人工智能/artificial intelligence
+</li>
+<li>推理期
+<ul class="org-ul">
+<li>二十世纪五十年代到七十年代初, 人工智能处于的研究阶段, 那时人们以为只要能赋予机器逻辑推理能力, 机器就能具有智能
+</li>
+</ul>
+</li>
+<li>知识期
+<ul class="org-ul">
+<li>二十世纪七十年代中期开始, 人工智能处于的研究阶段, 人们认为要使机器拥有智能, 就必须设法使机器拥有知识
+</li>
+</ul>
+</li>
+<li>学习期
+<ul class="org-ul">
+<li>图灵1950年提到机器学习的可能, 逐步发展, 到二十世纪八十年代成为独立学科领域, 各类技术百花齐放
+</li>
+</ul>
+</li>
+<li>机器学习
+</li>
+<li>机械学习
+<ul class="org-ul">
+<li>机器学习的一种划分, 但实际机器并未学习, 仅将信息存储与需要时原封不动地取出使用
+</li>
+</ul>
+</li>
+<li>示例学习/类比学习/从指令中学习/通过观察和发现学习
+</li>
+<li>归纳学习/从样例中学习(*)
+<ul class="org-ul">
+<li>从训练样例中归纳出学习结果
+</li>
+</ul>
+</li>
+<li>符号主义学习
+<ul class="org-ul">
+<li>二十世纪八十年代, 从样例中学习的一大主流. 逻辑和知识的结合, 代表技术, 决策树和基于逻辑的学习
+</li>
+</ul>
+</li>
+<li>连接主义学习
+<ul class="org-ul">
+<li>二十世纪九十年代中期之前, 从样例中学习的另一主流, 基于神经网络的连接主义学习. 当时面临调参难题
+</li>
+<li>二十世纪初卷土重来, 以深度学习之名, 此时大数据时代, 有数据, 有计算能力
+</li>
+</ul>
+</li>
+<li>统计学习
+<ul class="org-ul">
+<li>二十世纪九十年代中期, 成为从样例中学习的主流, 研究以统计学习理论支撑的技术, 代表技术, 支持向量机, 核方法
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> 应用现状</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>众包/crowdsouring
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> 阅读材料</h3>
+<div class="outline-text-3" id="text-1-7">
+<ul class="org-ul">
+<li>WEKA
+<ul class="org-ul">
+<li>著名的免费机器学习算法学习程序库
+</li>
+</ul>
+</li>
+<li>多释原则/principle of multiple explanations
+<ul class="org-ul">
+<li>主张保留和经验观察一致的所有假设, 与集成学习方面的研究很吻合
+</li>
+</ul>
+</li>
+
+<li>国际机器学习会议/ICML
+</li>
+<li>国际神经信息处理系统会议/NIPS
+</li>
+<li>国际学习理论会议/COLT
+</li>
+
+<li>欧洲机器学习会议/ECML
+</li>
+<li>亚洲机器学习会议/ACML
+</li>
+
+<li>Journal of Machine Learning Research
+</li>
+<li>Machine Learning
+</li>
+
+<li>IJCAI
+</li>
+<li>AAAI
+</li>
+<li>Arificial Intelligence
+</li>
+<li>Journal of Artificial Intelligence Research
+</li>
+
+<li>KDD
+</li>
+<li>ICDM
+</li>
+
+<li>ACM Transaction on Knowledge Discovery from Data
+</li>
+<li>Data Mining and Knowledge Discovery
+</li>
+
+<li>CVPR
+</li>
+
+<li>IEEE Ransactions on Pattern Analysis and Machine Intelligence
+</li>
+
+<li>Neural Computation
+</li>
+<li>IEEE Transactions on Neural Networks and Learning Systems
+</li>
+
+<li>Annals of Statistics
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 第2章 模型评估与选择</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 经验误差与过拟合</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>错误率/error rate
+<ul class="org-ul">
+<li>m个样本中有a个样本分类错误, 则错误率为a/m
+</li>
+</ul>
+</li>
+<li>精度/accuracy
+<ul class="org-ul">
+<li>等于1-错误率
+</li>
+</ul>
+</li>
+<li>误差/error
+<ul class="org-ul">
+<li>学习器的实际预测输出与样本的真实输出之间的差异
+</li>
+</ul>
+</li>
+<li>训练误差/training error/经验误差/empirical error
+<ul class="org-ul">
+<li>学习器在训练集上的误差
+</li>
+</ul>
+</li>
+<li>泛化误差/generalization error
+<ul class="org-ul">
+<li>学习器在新样本上的误差
+</li>
+</ul>
+</li>
+<li>欠拟合/underfitting
+<ul class="org-ul">
+<li>学习算法学习能力低下, 样本特性没有学到.
+</li>
+<li>通常表现: 训练误差大
+</li>
+</ul>
+</li>
+<li>过拟合/overfitting(*)
+<ul class="org-ul">
+<li>学习算法能力过于强大, 把训练样本中包含的不太一般的特性都学到了
+</li>
+<li>通常表现: 训练误差小, 泛化误差大
+</li>
+</ul>
+</li>
+<li>NP难
+<ul class="org-ul">
+<li>P问题: 有多项式时间算法, 算起来快
+</li>
+<li>NP问题: 算起来不确定快不快, 但我们可以快速检验这个问题的解
+</li>
+<li>NP-complete问题/NPC问题: 属于NP问题, 且术语NP-hard问题
+</li>
+<li>NP-hard问题/NP难问题: 比NP问题都要难的问题
+</li>
+</ul>
+</li>
+<li>模型选择/model selection
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> 评估方法</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>测试集/testing set
+</li>
+<li>测试误差/testing error
+<ul class="org-ul">
+<li>通常将测试误差作为泛化误差的近似
+</li>
+</ul>
+</li>
+<li>留出法/hold-out
+<ul class="org-ul">
+<li>直接将数据集分为两个互斥的数据集, 一个为训练集, 一个为测试集
+</li>
+</ul>
+</li>
+<li>采样/sampling
+<ul class="org-ul">
+<li>可将数据集切分的过程以采样角度看待
+</li>
+</ul>
+</li>
+<li>分层采样/stratified sampling
+<ul class="org-ul">
+<li>数据集切分过程中保留类别比例的采样方式
+</li>
+</ul>
+</li>
+<li>交叉验证/cross validation
+<ul class="org-ul">
+<li>将数据集以保持数据分布一致性的方式(通常为分层采样)分成k份, k-1份训练, 1份测试, 可进行k次训练测试, 最终测试结果为k次测试的均值.
+</li>
+</ul>
+</li>
+<li>k折交叉验证/k-fold cross validation
+<ul class="org-ul">
+<li>同上
+</li>
+</ul>
+</li>
+<li>留一法/Leave-One-Out/LOO
+<ul class="org-ul">
+<li>k折交叉验证特例, k=m, m为数据集大小
+</li>
+<li>通常认为LOO的评估结果比较准确, 因为训练集大小接近m
+</li>
+<li>但数据集大时, 计算开销难以接受
+</li>
+</ul>
+</li>
+<li>自助法/bootstrapping
+<ul class="org-ul">
+<li>以自助采样/bootstrap sampling为基础. 给定包含m个样本的数据集D, 对它采样得到同样为m个样本的数据集D'.采样方式为每次随机从D中采一个样本放到D',并放回到D
+</li>
+<li>D中一部分样本在D'中出现多次, 一部分不出现. 样本在m次采样始终不被采到的概率为p=(1-m)<sup>m</sup>, 对m-&gt;无穷求极限, p~0.368
+</li>
+<li>数据集较小, 难以划分训练测试集时, 很有用. 但训练集改变了初始数据集分布,会引入估计偏差
+</li>
+</ul>
+</li>
+<li>包外估计/out-of-bag estimate
+<ul class="org-ul">
+<li>自助法用D'进行训练, D-D'用于测试, 测试结果称为包外估计
+</li>
+</ul>
+</li>
+<li>调参与最终模型
+</li>
+<li>参数/parameter
+<ul class="org-ul">
+<li>包含2种, 算法参数和模型参数
+</li>
+<li>通常算法参数称为 超参数
+</li>
+<li>模型参数就称为参数
+</li>
+</ul>
+</li>
+<li>超参数/hyperparameter
+</li>
+<li>调参/parameter tuning
+<ul class="org-ul">
+<li>调参指的是调节算法参数/超参数
+</li>
+<li>类似算法选择, 但因为参数选择范围大, 导致候选参数多, 调参工作量大
+</li>
+</ul>
+</li>
+<li>粗调
+<ul class="org-ul">
+<li>通常为调参的第一阶段
+</li>
+<li>因调参工作量大, 初步将候选参数取值范围定的比较粗
+</li>
+</ul>
+</li>
+<li>精调
+<ul class="org-ul">
+<li>通常为调参的第二阶段
+</li>
+<li>基于粗调得到候选参数, 在参数附近进行小范围搜索优化参数
+</li>
+</ul>
+</li>
+<li>验证集/validation set
+<ul class="org-ul">
+<li>用于模型选择和调参
+</li>
+<li>测试集是模型实际使用时遇到的数据
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> 性能度量</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>性能度量/performance measure
+<ul class="org-ul">
+<li>衡量模型泛化能力的评价标准
+</li>
+</ul>
+</li>
+<li>均方误差/mean squared error
+<ul class="org-ul">
+<li>回归问题常用性能度量
+</li>
+</ul>
+</li>
+<li>错误率
+<ul class="org-ul">
+<li>分类问题常用性能度量
+</li>
+</ul>
+</li>
+<li>精度
+<ul class="org-ul">
+<li>分能问题常用性能度量
+</li>
+</ul>
+</li>
+<li>查准率/precision/准确率
+<ul class="org-ul">
+<li>二分类, 召回数据的精度
+</li>
+</ul>
+</li>
+<li>查全率/recall/召回率
+<ul class="org-ul">
+<li>二分类, 召回数据对应召回数据的占比
+</li>
+</ul>
+</li>
+<li>真正例/true positive
+<ul class="org-ul">
+<li>预测正确, 预测为正例
+</li>
+</ul>
+</li>
+<li>假正例/false positive
+<ul class="org-ul">
+<li>预测错误, 预测为正例
+</li>
+</ul>
+</li>
+<li>真反例/true negative
+<ul class="org-ul">
+<li>预测正确, 预测为反例
+</li>
+</ul>
+</li>
+<li>假反例/false negative
+<ul class="org-ul">
+<li>预测错误, 预测为反例
+</li>
+</ul>
+</li>
+<li>混淆矩阵/confusion matrix
+<ul class="org-ul">
+<li>表示分类结果的矩阵
+</li>
+</ul>
+</li>
+<li>单一评价指标/单一性能度量
+</li>
+<li>P-R曲线
+<ul class="org-ul">
+<li>变化概率阈值, 得到的纵坐标为P查准率, 横坐标为R查全率的曲线
+</li>
+<li>如果两个模型, 第一个模型P-R曲线完全包住了第二个, 可断定第一个模型性能更优
+</li>
+</ul>
+</li>
+<li>平衡点/Break-Even Point/BEP
+<ul class="org-ul">
+<li>是查全率等于查准率的取值
+</li>
+<li>如果两个模型, 第一个模型BEP大于第二个, 可认定第一个性能更优
+</li>
+</ul>
+</li>
+<li>F1
+<ul class="org-ul">
+<li>F1 = (2*P*R)/(P+R)
+</li>
+</ul>
+</li>
+<li>调和平均/harmonic mean
+<ul class="org-ul">
+<li>1/F1 = 1/2*(1/P+1/F)
+</li>
+<li>更重视更小值
+</li>
+</ul>
+</li>
+<li>加权F1
+<ul class="org-ul">
+<li>F<sub>beta</sub> = (1+beta<sup>2</sup>)*P*R/((beta<sup>2</sup>*P)+R)
+</li>
+<li>beta&gt;0, 度量查全率对查准率的相对重要性. beta&gt;1, 查全率有更大影响; beta&lt;1, 查准率有更大影响
+</li>
+</ul>
+</li>
+<li>加权调和平均
+<ul class="org-ul">
+<li>1/F<sub>beta</sub> = 1/(1+beta<sup>2</sup>)*(1/P + beta<sup>2</sup>/R)
+</li>
+</ul>
+</li>
+<li>算数平均
+<ul class="org-ul">
+<li>(P+R)/2
+</li>
+</ul>
+</li>
+<li>几何平均
+<ul class="org-ul">
+<li>sqrt(PxR)
+</li>
+</ul>
+</li>
+<li>多分类中n个二分类混淆矩阵的考察
+<ul class="org-ul">
+<li>n个二分类混淆矩阵的考察, 分别有(P1,R1),&#x2026;,(Pn,Rn)
+</li>
+</ul>
+</li>
+<li>宏查准率/macro-P
+<ul class="org-ul">
+<li>macro-P = 1/n(对i求和(Pi))
+</li>
+</ul>
+</li>
+<li>宏查全率/macro-R
+<ul class="org-ul">
+<li>macro-R = 1/n(对i求和(Ri))
+</li>
+</ul>
+</li>
+<li>宏F1/macro-F1
+<ul class="org-ul">
+<li>macro-F1 = 2*macro-P1*macro-R1/(macro-P1+macro-R1)
+</li>
+</ul>
+</li>
+<li>微查准率/micro-P
+<ul class="org-ul">
+<li>micro-P = mean(TP)/(mean(TP)+mean(FP))
+</li>
+</ul>
+</li>
+<li>微查全率/micro-R
+<ul class="org-ul">
+<li>micro-R = mean(TP)/(mean(TP)+mean(FN))
+</li>
+</ul>
+</li>
+<li>微F1/micro-F1
+<ul class="org-ul">
+<li>micro-F1 = 2*micro-P*micro-R/(micro-P+micro-R)
+</li>
+</ul>
+</li>
+<li>阈值/threshold/截断点/cut point
+<ul class="org-ul">
+<li>学习器测试样本时输出一个实值/概率预测值, 将这个预测值同threshold/cut point比较, 若大于阈值则为正, 否则为反类
+</li>
+</ul>
+</li>
+<li>ROC/受实验者工作特性(曲线)/Receiver Operating Characteristic
+<ul class="org-ul">
+<li>变化阈值, 得到的纵坐标为真正例率TPR, 横坐标为假正例率FPR的曲线
+</li>
+</ul>
+</li>
+<li>真正例率/True Positive Rate/TPR
+<ul class="org-ul">
+<li>TPR = TP/(TP+FN)
+</li>
+<li>判对的正例的占正例总量比例
+</li>
+</ul>
+</li>
+<li>假正例率/False Positive Rate/FPR
+<ul class="org-ul">
+<li>FPR = FP/(TN+FP)
+</li>
+<li>判错的整理占反例总量比例
+</li>
+</ul>
+</li>
+<li>AUC/Area Under ROC Curve
+<ul class="org-ul">
+<li>ROC的面积
+</li>
+<li>考虑的是样本预测的排序质量
+</li>
+<li>AUC = 1 - l<sub>rank</sub>
+</li>
+</ul>
+</li>
+<li>排序损失
+<ul class="org-ul">
+<li>l<sub>rank</sub> = 1/(m_+*m_-)求和x<sub>+属于D</sub><sub>+&amp;求和x</sub><sub>-属于D</sub>_-(punish(f(x_+)&lt;f(x_-)) + 1/2*punish(f(x_+)=f(x_-)))
+</li>
+<li>m<sub>+是正例个数</sub>, m<sub>-是反例个数</sub>, D<sub>+是正例集合</sub>, D<sub>-是反例集合</sub>
+</li>
+</ul>
+</li>
+<li>非均等代价/unequal cost
+<ul class="org-ul">
+<li>为不同类型错误所造成的不同损失, 可为错误赋予"非均等代价"
+</li>
+</ul>
+</li>
+<li>代价矩阵/cost matrix
+<ul class="org-ul">
+<li>样本分类的代价/数据集分类的代价, cost<sub>ij</sub>: 将第i类样本预测为j的代价
+</li>
+</ul>
+</li>
+<li>代价敏感/cost-sensitive错误率
+<ul class="org-ul">
+<li>加入代价权重
+</li>
+</ul>
+</li>
+<li>代价曲线/cost curve
+<ul class="org-ul">
+<li>横坐标是[0,1]的正例概率代价, P(+)cost = p*cost<sub>10</sub>/(p*cost<sub>10</sub> + (1-p)*cost<sub>01</sub>),p是样例为正例的概率
+<ul class="org-ul">
+<li>个人不理解p的含义, 觉得更像是提供一个自变量, 对正例代价和负例代价做分配
+</li>
+</ul>
+</li>
+<li>纵坐标是取值为[0,1]的归一化代价, cost<sub>norm</sub> = (FNR*p*cost<sub>10</sub>+FPR*(1-p)*cost<sub>01</sub>)/(p*cost<sub>10</sub>+(1-p)*cost<sub>01</sub>), FNR为假反例率, FPR为假正例率.
+<ul class="org-ul">
+<li>个人理解为, 对正例代价和负例代价做分配时, 代价的归一化
+</li>
+</ul>
+</li>
+<li>限定条件即为固定FPR和FNR时, y和x是线性关系, y=FNR*x+FPR*(1-x), 图中表示为线段. 因为x值域为[0,1], 求线段下的面积即为y求均值, 面积为期望总体代价, 等于(FPR+FNR)/2
+<ul class="org-ul">
+<li>个人理解: 面积为期望归一化总体代价
+</li>
+</ul>
+</li>
+<li>代价曲线为不同条件下所有线段的下限, 即P(+)cost下所有条件下的最小cost<sub>norm</sub>.
+</li>
+<li>所有条件下的期望总体代价为代价曲线下的面积.
+<ul class="org-ul">
+<li>个人理解为, 最小归一化总体代价的期望
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>规范化/normalization
+<ul class="org-ul">
+<li>将不同变化范围的值映射到相同的固定范围, 常见[0,1], 称为"归一化"
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> 比较检验</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>统计假设检验/hypothesis test
+<ul class="org-ul">
+<li>对学习器性能比较提供了重要依据. 基于假设检验结果我们可推断出, 若在测试集上观察到学习器A比B号, 则A的泛化性能是否在统计意义上由于B, 以及这个结论把握有多大.
+</li>
+</ul>
+</li>
+<li>假设检验中的"假设"
+<ul class="org-ul">
+<li>对学习器泛化错误率分布的某种判断或猜想
+</li>
+</ul>
+</li>
+<li>二项分布/binomial
+<ul class="org-ul">
+<li>在n次独立重复的伯努利试验中，设每次试验中事件A发生的概率为p。用X表示n重伯努利试验中事件A发生的次数，则X的可能取值为0，1，…，n,且对每一个k（0≤k≤n）,事件{X=k}即为“n次试验中事件A恰好发生k次”，随机变量X的离散概率分布即为二项分布（Binomial Distribution）
+</li>
+</ul>
+</li>
+<li>二项检验/binomial test
+<ul class="org-ul">
+<li>假设epson小于等于epson<sub>0成立，若epson</sub><sup>小于等于</sup>"epson"的概率不小于1-alpha ，则接受假设，即若P(epson<sup>小于等于</sup>"epson"|epson小于等于epson<sub>0</sub>)成立，则认为假设猜对了！
+</li>
+<li>如果要使泛化错误率epson小于等于epson<sub>0这个假设的置信度大于1</sub>-alpha
+</li>
+<li>使k&gt;epson<sub>0</sub>*m的概率小于alpha时, 最大的epson="epson"(临界值)
+</li>
+<li>如果测试错误率epson<sup>小于</sup>"epson", 可得在alpha的显著度下, 假设epson小于等于epson<sub>0不能被拒绝</sub>.
+</li>
+<li>二项检测同标准假设检验不同的地方是求k&gt;epson<sub>0</sub>*m+1时使用的概率分布是二项分布, 即泛化错误率为epson, 测试集有m个样本, 上错误样本数k满足二项分布
+</li>
+</ul>
+</li>
+<li>置信度/confidence
+</li>
+<li>显著度
+</li>
+<li>t检验/t-test
+<ul class="org-ul">
+<li>多次测试得到{epson^}, mean({epson^}), variance({epson^}), 满足t分布
+</li>
+<li>假设mean=epson<sub>0和显著度alpha</sub>,(应该是说epson=epson<sub>0</sub>), 最大错误率为临界值(双边). 如果tao<sub>t在临界值范围内</sub>, 接受假设.
+</li>
+</ul>
+</li>
+<li>t分布
+<ul class="org-ul">
+<li>k个测试错误率可看做泛化错误率epson<sub>0的独立采样</sub>, tao<sub>t</sub> = sqrt(k)(mean-epson<sub>0</sub>)/variance, 服从自由度k-1的t分布
+</li>
+</ul>
+</li>
+<li>自由度为k-1的t分布
+</li>
+<li>双边假设/two-tailed
+<ul class="org-ul">
+<li>(负无穷, t<sub>-alpha</sub>/2]和[t<sub>alpha</sub>/2, 正无穷]
+</li>
+</ul>
+</li>
+<li>交叉验证t检验
+<ul class="org-ul">
+<li>对A,B两个学习器的性能没有显著差别做假设检验. 因为使用了k次测试, 即使用t检验, 检验泛化均值为0.
+</li>
+<li>因为使用n轮m折交叉验证, 测试集独立性有影响, 则做了特殊处理.
+</li>
+</ul>
+</li>
+<li>成对t检验/paired t-test
+<ul class="org-ul">
+<li>成对指学习器A,B测试集相同的测试结果成对处理
+</li>
+</ul>
+</li>
+<li>McNemar检验
+<ul class="org-ul">
+<li>利用学习器分类结果的差别, 验证两者性能是否相同, 即应e1=e01, |e01-e10|服从正态分布
+</li>
+<li>|e01-e10|小于临界值则接受
+</li>
+</ul>
+</li>
+<li>列联表/contingency table
+<ul class="org-ul">
+<li>学习器A,B之间的性能关系, 列A行B, 内容为正确,错误. A,B正确e00, A,B错误e00,A对B错e10, A错B对e01.
+</li>
+</ul>
+</li>
+<li>Friedman检验
+</li>
+<li>后续检验/post-hoc test
+</li>
+<li>Nemenyi后续检验
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> 偏差与方差</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>偏差/bias
+<ul class="org-ul">
+<li>期望输出和真实标记的差别, 学习算法本身的拟合能力
+</li>
+<li>bias<sup>2</sup> = (E<sub>D</sub>(f(x;D))-y)<sup>2</sup>
+</li>
+</ul>
+</li>
+<li>方差/variance
+<ul class="org-ul">
+<li>使用样本数相同的不同训练集产生的方差, 数据扰动造成的影响
+</li>
+<li>var = E<sub>D[f</sub>(x;D)- E<sub>D</sub>(f(x;D))], E<sub>D对训练集D求期望</sub>, f(x;D)为在训练集D上训练的模型在x上的输出
+</li>
+</ul>
+</li>
+<li>噪声
+<ul class="org-ul">
+<li>当前任务上任何学习算法所能达到的期望泛化误差的下界, 体现学习任务本身的难度
+</li>
+<li>noise<sup>2</sup> = E<sub>D</sub>((yD-y)<sup>2</sup>), yD为数据集标记
+</li>
+</ul>
+</li>
+<li>偏差-方差分解/bias-variance decomposition
+<ul class="org-ul">
+<li>E(f;D) 算法期望泛化误差 = E<sub>D</sub>((f(x;D)-yD)<sup>2</sup>) = bias<sup>2</sup> + var + noise<sup>2</sup>,假设噪声期望为零E<sub>D</sub>(y<sub>D</sub>-y)=0
+</li>
+<li>泛化误差为偏差,方差和噪声之和, 体现出由学习算法的能力, 数据的充分性以及学习难度之和
+</li>
+</ul>
+</li>
+<li>偏差-方差窘境/bias-variance dilemma
+<ul class="org-ul">
+<li>学习器拟合不充分时, 训练数据的扰动不足以使学习器产生显著变化. 偏差主导泛化误差.
+</li>
+<li>学习器拟合充分时, 学习到了训练数据集本身的特性, 被训练集的扰动影响, 此时方差主导泛化误差.
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 第3章 线性模型</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> 基本形式</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>线性模型/linear model
+<ul class="org-ul">
+<li>f(x) = w<sup>T</sup>*x+b, 其中x为示例, w, b为参数
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> 线性回归</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>序/order
+<ul class="org-ul">
+<li>顺序, 如大小, 前后等.
+</li>
+<li>有序离散属性可连续化
+</li>
+</ul>
+</li>
+<li>欧式距离/Euclidean distance/欧几里得距离
+<ul class="org-ul">
+<li>dist = ||X<sub>1</sub>-X<sub>2||</sub><sup>2</sup>
+</li>
+</ul>
+</li>
+<li>均方误差/mse/平方误差/square loss
+<ul class="org-ul">
+<li>很好的几何意义, 对应欧式距离
+</li>
+</ul>
+</li>
+<li>最小二乘法/least square method
+<ul class="org-ul">
+<li>基于均方误差最小化来进行模型求解的方法
+</li>
+</ul>
+</li>
+<li>凸函数
+<ul class="org-ul">
+<li>任意两点x1,x2满足f((x1+x2)/2)&lt;=(f(x1)+f(x2))/2
+</li>
+<li>二阶导数在区间上非负
+</li>
+</ul>
+</li>
+<li>线性回归模型的最小二乘参数估计
+<ul class="org-ul">
+<li>f(x) = x<sup>T</sup>*(X<sup>T</sup>*X)<sup>-1</sup>*X<sup>T</sup>*y
+</li>
+<li>因为在现实情况中参数数量多于样本数,X<sup>T</sup>*X不是满秩矩阵, 会引入正则项
+</li>
+</ul>
+</li>
+<li>闭式解/closed-form/解析解/analytical solution
+<ul class="org-ul">
+<li>就是一些严格的公式,给出任意的自变量就可以求出其因变量,也就是问题的解
+</li>
+</ul>
+</li>
+<li>多元线性回归/multivariate linear regression
+</li>
+<li>满秩矩阵/full-rank matrix
+<ul class="org-ul">
+<li>A为n阶方阵, r(A)为n(狭义)
+</li>
+<li>秩: 用初等行变换将矩阵A化为阶梯形矩阵, 则矩阵中非零行的个数就定义为这个矩阵的秩, 记为r(A)
+</li>
+</ul>
+</li>
+<li>正定矩阵/positive definite matrix
+<ul class="org-ul">
+<li>设M是n阶方阵，如果对任何非零向量z，都有z<sup>T</sup>*M*z&gt; 0，就称M为正定矩阵
+</li>
+<li>X<sup>T</sup>*X为正定矩阵
+</li>
+<li>等价命题
+<ul class="org-ul">
+<li>M的特征值均为正
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>正则化项/regularization
+<ul class="org-ul">
+<li>损失函数中对参数的约束项, 过拟合的处理方式
+</li>
+</ul>
+</li>
+<li>对数线性回归/log-linear regression
+<ul class="org-ul">
+<li>输出标记在指数尺度上变化, 将输出标记的对数作为线性模型逼近的目标
+</li>
+</ul>
+</li>
+<li>广义线性模型/generalized linear model
+<ul class="org-ul">
+<li>利用单调可回函数g(.)对输出标记做非线性映射, 然后利用线性模型拟合映射.
+</li>
+</ul>
+</li>
+<li>联系函数/link function
+<ul class="org-ul">
+<li>g(.)
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> 对数几率回归</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>单位阶跃函数/unit-step function
+<ul class="org-ul">
+<li>y=0,z&lt;0; y=0.5, z=0; y=1, z&gt;0
+</li>
+</ul>
+</li>
+<li>替代函数/surrogate function
+<ul class="org-ul">
+<li>一定程度上近似单位阶跃函数, 且单调可微
+</li>
+</ul>
+</li>
+<li>对数几率函数/logistic function
+<ul class="org-ul">
+<li>y = 1/(1+exp(-z))
+</li>
+</ul>
+</li>
+<li>几率/odds
+<ul class="org-ul">
+<li>y/(1-y), 视y为x为正例的可能性,1-y为x为反例的可能性, 两者的比值.
+</li>
+</ul>
+</li>
+<li>对数几率/log odds/logit
+<ul class="org-ul">
+<li>In(y/(1-y))
+</li>
+</ul>
+</li>
+<li>对数几率回归/logistic regression/logit regression/对率回归/逻辑回归
+<ul class="org-ul">
+<li>函数: In(y/1-y) = w<sup>T</sup>*x + b
+</li>
+<li>目的: 用线性回归模型的预测结果去逼近真实标记的对数几率
+</li>
+<li>求解: 利用最大似然法,得到损失函数, loss = 求和(-y<sub>i</sub>*beta<sup>T</sup>*x<sub>i</sub> + In(1+exp(beta<sup>T</sup>*x<sub>i</sub>)), loss为凸函数
+</li>
+</ul>
+</li>
+<li>极大似然法/maximum likelihood method
+<ul class="org-ul">
+<li>假设每次实验独立, 使得所有实验的后验概率最大
+</li>
+<li>步骤: 1)写似然函数,2)似然函数求对数整理,3)求倒数,4)解似然方程
+</li>
+</ul>
+</li>
+<li>梯度下降法/gradient descent
+<ul class="org-ul">
+<li>beta<sup>j</sup>+1 = beta<sup>j</sup> - alpha * 损失函数对beta求偏导
+</li>
+<li>又名最速下降法, 梯度是下降方向
+</li>
+</ul>
+</li>
+<li>牛顿法/Newton method
+<ul class="org-ul">
+<li>beta<sup>j</sup>+1 = beta<sup>j</sup> - 一阶偏导/二阶偏导
+</li>
+<li>求极大极小值,基于偏导等于零,利用一阶泰勒展开式.
+<ul class="org-ul">
+<li>求解f'(x+delta(x))=0时的x+delta(x).
+</li>
+<li>一阶泰勒展开式: f'(x+delta(x)) ~= f'(x) + f''(x)*delta(x)
+</li>
+<li>delta(x) ~= - f'(x)/f''(x)
+</li>
+<li>x+delta(x) ~= x - f'(x)/f''(x)
+</li>
+<li>初始x, 可迭代逐步得到真实的x+delta(x), 收敛条件|delta(x)| &lt; sigma
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>泰勒展开式
+<ul class="org-ul">
+<li>f(x+delta(x)) ~= f(x) + f'(x)*delta(x) + f''(x)*delta<sup>2</sup>(x) + &#x2026;
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> 线性判别分析</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>线性判别分析/Linear Discriminant Analysis/LDA/Fisher判别分析
+<ul class="org-ul">
+<li>模型: 将样例投影到一条直线上
+<ul class="org-ul">
+<li>直线是一维空间
+</li>
+</ul>
+</li>
+<li>训练: 使得同类样例投影点尽可能接近, 异类样例的投影点尽可能远离
+<ul class="org-ul">
+<li>X<sub>i示例集合</sub>, u<sub>i均值向量</sub>, sigma<sub>i协方差矩阵</sub>, i是类型
+</li>
+<li>同类样例投影点的协方差尽可能小, 即w<sup>T</sup>*sigma<sub>0</sub>*w + w<sup>T</sup>*sigma<sub>1</sub>*w
+</li>
+<li>类中心之间的距离尽可能大, 即||w<sup>T</sup>*u<sub>0</sub> - w<sup>T</sup>*u1||<sub>2</sub><sup>2</sup>
+</li>
+<li>最大化: J = ||w<sup>T</sup>*u<sub>0</sub>-w<sup>T</sup>*u<sub>1||</sub><sub>2</sub><sup>2</sup> / (w<sup>T</sup>*sigma<sub>0</sub>*w+w<sup>T</sup>*sigma<sub>1</sub>*w)
+<ul class="org-ul">
+<li>J = (w<sup>T</sup>*S<sub>b</sub>*w)/(w<sup>T</sup>*S<sub>w</sub>*w), S<sub>b类间散度矩阵</sub>, S<sub>w类内散度矩阵</sub>
+</li>
+<li>min(-w<sup>T</sup>*S<sub>b</sub>*w), s.t. w<sup>T</sup>*S<sub>w</sub>*w = 1
+</li>
+<li>利用拉格朗日乘子法, 求其中一个解, w=S<sub>w</sub><sup>-1</sup>*(u<sub>0</sub>-u<sub>1</sub>)
+<ul class="org-ul">
+<li>其中S<sub>w</sub><sup>-1可通过奇异值分解求得</sup>, S<sub>w</sub><sup>-1</sup>= V*sigma<sup>-1</sup>*U<sup>T</sup>
+</li>
+</ul>
+</li>
+<li>从贝叶斯决策理论的角度, 当两类数据同先验, 满足高斯分布且协方差相等时,LDA可达到最优分类
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>预测: 将新样本投影到直线上, 根据投影点位置判断类别
+</li>
+</ul>
+</li>
+<li>均值向量/u
+<ul class="org-ul">
+<li>针对特征/变量
+</li>
+</ul>
+</li>
+<li>协方差矩阵/sigma
+<ul class="org-ul">
+<li>x<sub>i随机变量</sub>, s<sub>ij是sigma中的元素</sub>, s<sub>ij</sub> = E([x<sub>i</sub>-E(x<sub>i</sub>)][x<sub>j</sub>-E(x<sub>j</sub>)])
+</li>
+<li>sigma = 求和<sub>x</sub>((x-u)*(x-u)<sup>T</sup>)
+</li>
+</ul>
+</li>
+<li>类内散度矩阵/within-class scatter matrix
+<ul class="org-ul">
+<li>S<sub>w</sub> = sigma<sub>0</sub>+sigma<sub>1</sub>
+</li>
+</ul>
+</li>
+<li>类间散度矩阵/between-class scatter matrix
+<ul class="org-ul">
+<li>S<sub>b</sub> = (u<sub>0</sub>-u<sub>1</sub>)*(u<sub>0</sub>-u<sub>1</sub>)<sup>T</sup>
+</li>
+</ul>
+</li>
+<li>广义瑞利商/generalized Rayleigh quotient
+<ul class="org-ul">
+<li>J是S<sub>b和S</sub><sub>w的广义瑞利商</sub>
+</li>
+</ul>
+</li>
+<li>拉格朗日乘子法
+<ul class="org-ul">
+<li>是一种寻找多元函数在一组约束下的极值的方法. 通过引入拉格朗日乘子, 可将d个变量和k个约束条件的最优化问题转化为具有d+k个变量的无约束优化问题求解.
+</li>
+<li>拉格朗日函数: L(x, lambda, mu) = f(x) + 求和(lambda<sub>i</sub>*h<sub>i</sub>(x)) + 求和(mu<sub>i</sub>*g<sub>j</sub>(x))
+<ul class="org-ul">
+<li>其中h(x)是等式约束, g(x)是不等式约束
+</li>
+<li>等式约束为拉格朗日函数求极值
+</li>
+<li>不等式约束转化为KKT条件: g(x)&lt;=0, mu&gt;=0, mu*g(x)=0
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>特征值分解
+<ul class="org-ul">
+<li>alpha*A = alpha*x
+</li>
+</ul>
+</li>
+<li>奇异值分解
+<ul class="org-ul">
+<li>任意实矩阵A属于R<sub>m</sub>*n都可以分解成: A = U*Sigma*V<sup>T</sup>
+<ul class="org-ul">
+<li>U属于R<sup>m</sup>*m, 是满足U<sup>T</sup>*U=I的m阶酉矩阵(unitary matrix)
+</li>
+<li>V属于R<sup>n</sup>*n, 是满足V<sup>T</sup>*V=I的n阶酉矩阵
+</li>
+<li>Sigma属于R<sup>m</sup>*n, 其中sigma<sub>ii未非负实数</sub>, 其中位置为0, sigma<sub>11</sub>&gt;=sigma<sub>22</sub>&gt;=&#x2026;&gt;=0
+</li>
+</ul>
+</li>
+<li>非零奇异值的个数为A的秩
+</li>
+<li>U列向量为左奇异向量, V列向量为右奇异向量
+</li>
+</ul>
+</li>
+<li>低秩矩阵近似/low-rank matrix approximation
+<ul class="org-ul">
+<li>可用奇异值分解求解的问题
+</li>
+<li>给定秩为r的矩阵A, 欲求最优k秩近似矩阵A~, k&lt;=r
+<ul class="org-ul">
+<li>min({||A-A~||<sub>F</sub>, A~属于R<sup>m</sup>*n}), s.t. rank(A~)=k: A<sub>k</sub> = U<sub>k</sub>*Sigma<sub>k</sub>*V<sub>k</sub><sup>T</sup>, Sigma<sub>k为r</sub>-k个最小奇异值置0的Sigma, U<sub>k</sub>, V<sub>k为U</sub>, V只保留对应的列奇异向量
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>多分类LDA
+<ul class="org-ul">
+<li>过程省略, 可记忆其可监督降维
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> 多分类学习</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>拆解法
+<ul class="org-ul">
+<li>将多分类任务拆为若干个二分类任务求解, 再将结果集成成最终结果
+</li>
+</ul>
+</li>
+<li>一对一/OvO
+<ul class="org-ul">
+<li>N个类别任意两两配对, 共N(N-1)/2个分类器
+</li>
+</ul>
+</li>
+<li>一对其余/OvR
+<ul class="org-ul">
+<li>N个类别每个类别与余下类别配对成二分类, 共N个分类器
+</li>
+</ul>
+</li>
+<li>多对多/MvM
+<ul class="org-ul">
+<li>每次抽若干类作为正类,若干其他类为反类, 需要特殊设计.
+</li>
+</ul>
+</li>
+<li>纠错输出码/Error Correcting Output Codes, ECOC
+<ul class="org-ul">
+<li>分为编码,解码两步: 编码是划分分类器, 使每个类别有唯一编码, 解码是将预测编码同每个类别的编码比较, 距离最小的类别为最终结果
+</li>
+</ul>
+</li>
+<li>编码矩阵/coding matrix
+<ul class="org-ul">
+<li>为所有类别编码构成的矩阵, 常见形式有二元码和三元码
+</li>
+</ul>
+</li>
+<li>二元码
+<ul class="org-ul">
+<li>矩阵元素有两种, 正例和反例
+</li>
+</ul>
+</li>
+<li>三元码
+<ul class="org-ul">
+<li>矩阵元素有三种, 正例,反例和停用例
+</li>
+</ul>
+</li>
+<li>海明距离
+<ul class="org-ul">
+<li>常用在信息编码中求距离
+</li>
+<li>两个代码在对应位上编码不同的位数称为海明距离/码距, 如10101和00110从第一位开始依次有第一位、第四、第五位不同，海明距离为3.
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6"><span class="section-number-3">3.6</span> 类别不平衡问题</h3>
+<div class="outline-text-3" id="text-3-6">
+<ul class="org-ul">
+<li>类别不平衡/class-imbalance
+<ul class="org-ul">
+<li>指分类任务中不同类别的训练样例数目差别很大的情况
+</li>
+</ul>
+</li>
+<li>再缩放/rescaling/再平衡/rebalance
+<ul class="org-ul">
+<li>假设训练集是真实样本的无偏采样, 将观察几率设备预测几率的阈值
+</li>
+</ul>
+</li>
+<li>欠采样/undersampling/下采样/downsampling
+<ul class="org-ul">
+<li>除掉一些样例多的类别的数据
+</li>
+</ul>
+</li>
+<li>过采样/oversampling/上菜样/upsampling
+<ul class="org-ul">
+<li>对样例少的类别多采样一些
+</li>
+</ul>
+</li>
+<li>阈值移动/threshold-moving
+<ul class="org-ul">
+<li>使用原始数据集, 但对应调整阈值
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-7" class="outline-3">
+<h3 id="sec-3-7"><span class="section-number-3">3.7</span> 阅读材料</h3>
+<div class="outline-text-3" id="text-3-7">
+<ul class="org-ul">
+<li>稀疏表示/sparse representation
+<ul class="org-ul">
+<li>对问题获得稀疏性的解
+</li>
+</ul>
+</li>
+<li>DAG/Directed Acyclic Graph
+</li>
+<li>闭式解
+<ul class="org-ul">
+<li>解析解
+</li>
+</ul>
+</li>
+<li>多标记问题/multi-label learning
+<ul class="org-ul">
+<li>一个样本有多个标记
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> 第4章 决策树</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> 基本流程</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>决策树
+<ul class="org-ul">
+<li>基于树形结构决策, 每个子结点是对某个属性的"测试"(单变量决策树)
+</li>
+</ul>
+</li>
+<li>分而治之/divide-and-conquer
+<ul class="org-ul">
+<li>决策树流程遵循的策略
+</li>
+</ul>
+</li>
+<li>递归过程
+<ul class="org-ul">
+<li>原理: 1调用了自身, 2退出机制
+</li>
+<li>思考方法: 参考归纳过程
+</li>
+<li>决策树的生成过程属于递归过程
+</li>
+</ul>
+</li>
+<li>先验分布/prior distribution
+<ul class="org-ul">
+<li>是概率分布的一种. 与试验结果无关，或与随机抽样无关，反映在进行统计试验之前根据其他有关参数口的知识而得到的分布
+</li>
+</ul>
+</li>
+<li>后验分布/posterior distribution
+<ul class="org-ul">
+<li>根据样本 X 的分布Pθ及θ的先验分布π(θ)，用概率论中求条件概率分布的方法,可算出在已知X=x的条件下,θ的条件分布 π(θ|x)。因为这个分布是在抽样以后才得到的，故称为后验分布
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> 划分选择</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>纯度/purity
+<ul class="org-ul">
+<li>决策树中结点包含的样本类别越集中, 纯度越高
+</li>
+<li>随着决策树划分的深入,希望分支结点的纯度越高
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-4-2-1" class="outline-4">
+<h4 id="sec-4-2-1"><span class="section-number-4">4.2.1</span> 信息增益</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<ul class="org-ul">
+<li>信息熵/information entropy
+<ul class="org-ul">
+<li>度量样本合集纯度最常用的一种指标
+</li>
+<li>Ent(D) = -对k求和(p<sub>k</sub>*log<sub>2</sub>(p<sub>k</sub>)), p<sub>k为第k类样本所占的比例</sub>, D为数据集合
+</li>
+<li>Ent(D)值越小, D的纯度越高
+</li>
+</ul>
+</li>
+<li>信息增益/information gain
+<ul class="org-ul">
+<li>利用属性a对样本集D进行划分可得
+</li>
+<li>Gain(D, a) = Ent(D) - 对v求和|D<sup>v|</sup>/|D|*Ent(D<sup>v</sup>), 其中v是a的属性值, D<sup>v是属性a为v的集合</sup>
+</li>
+<li>一般而言, 信息增益越大, 意味着使用属性a进行划分所获得的"纯度提升"越大
+</li>
+<li>对含较多属性值的属性有所偏好
+</li>
+</ul>
+</li>
+<li>ID3决策树学习算法
+<ul class="org-ul">
+<li>基于信息增益为准则来划分属性
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-2-2" class="outline-4">
+<h4 id="sec-4-2-2"><span class="section-number-4">4.2.2</span> 增益率</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<ul class="org-ul">
+<li>增益率/gain ratio
+<ul class="org-ul">
+<li>利用属性a对样本集D进行划分可得
+</li>
+<li>Gain<sub>ratio</sub>(D, a) = Gain(D,a)/IV(a)
+<ul class="org-ul">
+<li>IV(a) = -对v求和(|D<sup>v|</sup>/|D|*log<sub>2</sub>(|D<sup>v|</sup>/|D|))
+</li>
+<li>IV(a)称为属性a的固有值/intrinsic value.
+</li>
+<li>属性a的可能取值越多, IV(a)的值通常会越大
+</li>
+</ul>
+</li>
+<li>增益率准则对可取值数目较少的属性有所偏好
+</li>
+</ul>
+</li>
+<li>C4.5算法
+<ul class="org-ul">
+<li>先从候选划分属性中找到信息增益高于平均水平的属性, 再从中选择增益率最高的
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-2-3" class="outline-4">
+<h4 id="sec-4-2-3"><span class="section-number-4">4.2.3</span> 基尼指数</h4>
+<div class="outline-text-4" id="text-4-2-3">
+<ul class="org-ul">
+<li>基尼值
+<ul class="org-ul">
+<li>Gini(D) = 对k求和(对k'!=k的k'求和(p<sub>k</sub>*p<sub>k'</sub>)) = 1-对k求和(p<sub>k</sub><sup>2</sup>)
+</li>
+<li>反映了从数据集D中随机抽取两个样本,其类别标记不一致的概率
+</li>
+<li>Gini(D)越小, 则数据集D的纯度越高
+</li>
+</ul>
+</li>
+<li>属性a的基尼指数/gini index
+<ul class="org-ul">
+<li>Gini<sub>index</sub>(D, a) = 对v求和(|D<sup>v|</sup>/|D|*Gini(D<sup>v</sup>))
+</li>
+</ul>
+</li>
+<li>CART决策树
+<ul class="org-ul">
+<li>候选属性集合A中选择划分后基尼指数最小的属性作为最优划分属性
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> 剪枝处理</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>剪枝/pruning
+<ul class="org-ul">
+<li>决策树学习算法对付"过拟合"的主要手段
+</li>
+<li>剪掉过多的决策树分支
+</li>
+</ul>
+</li>
+<li>预剪枝/prepruning
+<ul class="org-ul">
+<li>决策树生成过程中, 对每个结点在划分前先进行估计, 若当前结点的划分不能带来决策树泛化性能提升,则停止划分并将当前结点标记为叶结点
+</li>
+</ul>
+</li>
+<li>后剪枝/post-pruning
+<ul class="org-ul">
+<li>先从训练集生成一颗完整的决策树, 然后自底向上地对非叶结点进行考察,若将该结点对应的子树替换成叶结点能带来决策树泛化能力提升,则替换
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-4-3-1" class="outline-4">
+<h4 id="sec-4-3-1"><span class="section-number-4">4.3.1</span> 预剪枝</h4>
+<div class="outline-text-4" id="text-4-3-1">
+<ul class="org-ul">
+<li>决策树桩/decision stump
+<ul class="org-ul">
+<li>仅有一层划分的决策树
+</li>
+</ul>
+</li>
+<li>贪心
+<ul class="org-ul">
+<li>每一步利用局部最优
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-3-2" class="outline-4">
+<h4 id="sec-4-3-2"><span class="section-number-4">4.3.2</span> 后剪枝</h4>
+</div>
+</div>
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> 连续与缺失值</h3>
+<div class="outline-text-3" id="text-4-4">
+</div><div id="outline-container-sec-4-4-1" class="outline-4">
+<h4 id="sec-4-4-1"><span class="section-number-4">4.4.1</span> 连续值处理</h4>
+<div class="outline-text-4" id="text-4-4-1">
+<ul class="org-ul">
+<li>二分法/bi-partition
+<ul class="org-ul">
+<li>一种连续属性离散化的技术
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-4-2" class="outline-4">
+<h4 id="sec-4-4-2"><span class="section-number-4">4.4.2</span> 缺失值处理</h4>
+<div class="outline-text-4" id="text-4-4-2">
+<ul class="org-ul">
+<li>处理两个问题
+<ul class="org-ul">
+<li>属性值缺失情况下进行划分属性选择
+<ul class="org-ul">
+<li>利用没有缺失属性值的集合计算指标, 但缺失属性集合有权重(指标已经被规范化)
+</li>
+</ul>
+</li>
+<li>给定划分属性, 该样本在该属性上缺失, 如何划分
+<ul class="org-ul">
+<li>分配到所有子树, 以训练集缺失集合权重的分配概率
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4-5" class="outline-3">
+<h3 id="sec-4-5"><span class="section-number-3">4.5</span> 多变量决策树</h3>
+<div class="outline-text-3" id="text-4-5">
+<ul class="org-ul">
+<li>轴平行/axis-parallel
+<ul class="org-ul">
+<li>决策树分类边界由若干个与坐标轴平行的分段组成
+</li>
+</ul>
+</li>
+<li>多变量决策树/multivariate decision tree/斜决策树/oblique decision tree
+<ul class="org-ul">
+<li>一个非叶结点是对属性的 <b>线性组合</b> 进行测试
+</li>
+<li>划分边界可为斜线
+</li>
+</ul>
+</li>
+<li>单变量决策树/univariate decision tree
+<ul class="org-ul">
+<li>非叶结点是对单个属性进行测试
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-6" class="outline-3">
+<h3 id="sec-4-6"><span class="section-number-3">4.6</span> 阅读材料</h3>
+<div class="outline-text-3" id="text-4-6">
+<ul class="org-ul">
+<li>增量学习/incremental learning
+<ul class="org-ul">
+<li>接收到新样本后可对已学得的模型进行调整,而不用完全重新学习
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> 第5章 神经网络</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> 神经元模型</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>神经网络/neural networks
+<ul class="org-ul">
+<li>神经网络是由 <b>具有适应性</b> 的 <b>简单单元</b> 组成的 <b>广泛并行互联的网络</b>, 它的组织能模拟生物神经系统对真实世界物体所做出的交互反映.
+</li>
+</ul>
+</li>
+<li>神经网络学习
+<ul class="org-ul">
+<li>机器学习和神经网络这两个学科领域的交叉部分
+</li>
+</ul>
+</li>
+<li>神经元/neuron
+<ul class="org-ul">
+<li>神经网络中的简单单元
+</li>
+<li>与其他神经元相连, 神经元内电位超过阈值, 将向相连的神经元传递化学物质, 改变它们的电位
+</li>
+</ul>
+</li>
+<li>M-P神经元模型/阈值逻辑单元/threshold logic unit
+<ul class="org-ul">
+<li>输入: n个其他神经元的加权输出
+</li>
+<li>输出: 输入同阈值比较经激活函数
+</li>
+</ul>
+</li>
+<li>激活函数/activation function
+<ul class="org-ul">
+<li>将神经元输出映射到 激活/1, 抑制/0, 两种状态
+</li>
+<li>理想激活函数为 阶跃函数
+</li>
+</ul>
+</li>
+<li>挤压函数/squashing function/Sigmoid函数
+<ul class="org-ul">
+<li>阶跃函数不连续,不光滑, 为了神经网络有更好的数学性质, 使用Sigmoid函数作为常用激活函数
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> 感知机与多层网络</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>感知机/perceptron
+<ul class="org-ul">
+<li>两层神经元组成, 输入接外界输入信号, 输出层是M-P神经元
+</li>
+</ul>
+</li>
+<li>哑结点/dummy node
+<ul class="org-ul">
+<li>??
+</li>
+</ul>
+</li>
+<li>学习率/learning rate
+</li>
+<li>收敛/converge
+</li>
+<li>振荡/fluctuation
+</li>
+<li>隐含层/hidden layer
+<ul class="org-ul">
+<li>输入层和输出层之间的神经元层
+</li>
+</ul>
+</li>
+<li>多层前馈神经网络/multi-layer feedforwad neural networks
+<ul class="org-ul">
+<li>每层神经元与下一层神经元互连, 神经元之间不存在同层连接, 也不存在跨层连接
+</li>
+</ul>
+</li>
+<li>连接权/connection weight
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> 误差逆传播算法</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>误差逆传播算法/error backPropagation/BP
+<ul class="org-ul">
+<li>基于梯度下降
+</li>
+<li>基于链式法则, 从输出反向计算梯度
+</li>
+</ul>
+</li>
+<li>标准BP算法
+<ul class="org-ul">
+<li>每次仅对一个训练样例更新连接权和阈值
+</li>
+</ul>
+</li>
+<li>累计误差逆传播算法/accumulated error backpropagation
+<ul class="org-ul">
+<li>每次对整个训练集样例更新连接权和阈值
+</li>
+</ul>
+</li>
+<li>一轮/one round/one epoch
+<ul class="org-ul">
+<li>读取训练集一遍
+</li>
+</ul>
+</li>
+<li>随机梯度下降/stochastic gradient descent/SGD
+<ul class="org-ul">
+<li>每次读取样本数少于训练集样本数
+</li>
+</ul>
+</li>
+<li>标准梯度下降
+<ul class="org-ul">
+<li>每次读取整个训练集
+</li>
+</ul>
+</li>
+<li>早停/early stopping
+<ul class="org-ul">
+<li>将数据集分成训练集和验证集, 训练集用于计算梯度, 更新连接权和阈值, 验证集用来估计误差, 若训练集误差降低但验证集误差升高, 则停止训练, 同时返回具有最小验证集误差的连接权和阈值.
+</li>
+</ul>
+</li>
+<li>正则化/regularization
+<ul class="org-ul">
+<li>基本思想是在误差目标函数中增加一个用于描述网络复杂度的部分, 例如连接权和阈值的平方和, 以达到优化时降低网络复杂度, 使网络输出更加"光滑"的目的.
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-4" class="outline-3">
+<h3 id="sec-5-4"><span class="section-number-3">5.4</span> 全局最小与局部最小</h3>
+<div class="outline-text-3" id="text-5-4">
+<ul class="org-ul">
+<li>局部最小/local minimum
+</li>
+<li>全局最小/global minimum
+</li>
+<li>跳出局部最小的技术(缺乏理论保障)
+<ul class="org-ul">
+<li>以不同初始点训练多个模型
+</li>
+<li>模拟退火
+</li>
+<li>随机梯度下降
+</li>
+<li>遗传算法
+</li>
+</ul>
+</li>
+<li>模拟退火/simulated annealing
+<ul class="org-ul">
+<li>在每一步都以一定概率接受比当前解更差的结果, 但随着迭代的推进, 接受"次优解"的概率要变低, 保证算法稳定.
+</li>
+</ul>
+</li>
+<li>遗传算法/genetic algorithms
+<ul class="org-ul">
+<li>父,母,遗传,变异
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-5" class="outline-3">
+<h3 id="sec-5-5"><span class="section-number-3">5.5</span> 其他常见的神经网络</h3>
+<div class="outline-text-3" id="text-5-5">
+</div><div id="outline-container-sec-5-5-1" class="outline-4">
+<h4 id="sec-5-5-1"><span class="section-number-4">5.5.1</span> RBF网络</h4>
+<div class="outline-text-4" id="text-5-5-1">
+<ul class="org-ul">
+<li>RBF网络/radial basis function networks/径向基函数网络
+<ul class="org-ul">
+<li>结构
+<ul class="org-ul">
+<li>前馈神经网络
+</li>
+<li>隐层神经元激活函数为径向基函数
+<ul class="org-ul">
+<li>径向基函数为: p(x, c), 样本x到数据中心c之间的欧式距离的单调函数, c为必然存在的参数, 还可以有距离的线性参数
+</li>
+<li>常用的高斯径向基函数形如: p(x, c) = exp(-beta*||x-c||<sup>2</sup>)
+</li>
+</ul>
+</li>
+<li>输出层是隐层神经元输出的线性组合
+</li>
+</ul>
+</li>
+<li>训练
+<ul class="org-ul">
+<li>第一步, 确定神经元c, 常用的方法包含随机采样, 聚类等
+</li>
+<li>第二步, 利用BP算法等来确定参数(连接权, 径向基线性参数)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-5-2" class="outline-4">
+<h4 id="sec-5-5-2"><span class="section-number-4">5.5.2</span> ART网络</h4>
+<div class="outline-text-4" id="text-5-5-2">
+<ul class="org-ul">
+<li>竞争型学习/competitive learning
+<ul class="org-ul">
+<li>神经网络中一种常用的无监督学习策略, 使用该策略时, 网络的输出神经元相互竞争, 每一时刻仅有一个竞争获胜的神经元被激活, 其他神经元的状态被抑制.
+</li>
+</ul>
+</li>
+<li>胜者通吃/winner-take-all
+</li>
+<li>ART/adaptive reasonance theory/自适应谐振理论
+<ul class="org-ul">
+<li>竞争学习的代表
+</li>
+<li>由比较层, 识别层, 识别阈值和重置模块构成
+<ul class="org-ul">
+<li>比较层负责接收输入样本, 并将其传递给识别层神经元
+</li>
+<li>识别层每个神经元对应一个模式类, 神经元数目可在训练过程中动态增长以增加新的模式类
+<ul class="org-ul">
+<li>识别层神经元需要产生获胜神经元, 竞争最简单的方式是, 计算输入向量与每个识别层神经元所对应的模式类之间的距离, 距离最小获胜.
+</li>
+<li>获胜神经元发送信号抑制其他神经元
+</li>
+<li>若输入向量与获胜神经元所对应的向量大于阈值, 则网络的连接权更新, 接收到类似输入时获胜神经元的相似度更大.
+</li>
+<li>若不大于阈值, 识别层新增神经元, 其代表向量就设为当前输入向量.
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>识别阈值影响重大, 当识别阈值较高时, 输入样本分类较多, 模式精细. 反之, 较粗.
+</li>
+</ul>
+</li>
+<li>可塑性-稳定性窘境/stability-plasticity dilemma
+<ul class="org-ul">
+<li>竞争型学习常见的窘境
+</li>
+<li>可塑性: 神经网络要有学习新知识的能力
+</li>
+<li>稳定性: 神经网络在学习新知识时要保持对旧知识的记忆
+</li>
+<li>ART算法比较好的缓解了竞争型学习中的"可塑性-稳定性窘境"
+</li>
+</ul>
+</li>
+<li>在线学习/online learning
+</li>
+<li>批模式/batch-mode
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-5-3" class="outline-4">
+<h4 id="sec-5-5-3"><span class="section-number-4">5.5.3</span> SOM网络</h4>
+<div class="outline-text-4" id="text-5-5-3">
+<ul class="org-ul">
+<li>SOM/self-organizing map/自组织映射/self-organizing feature map/自组织特征映射
+<ul class="org-ul">
+<li>一种竞争学习型的无监督神经网络, 它能将高维输入数据映射到低维空间(通常二维),同时保持输入数据在高维空间的拓扑结构, 即高维空间中相似的样本点映射到网络输出层中的临近神经元
+</li>
+<li>输出层神经元以矩阵方式排列在二维空间中, 每个神经元都拥有一个权向量, 网络在接收向量后, 将会确定输出层获胜神经元, 它决定了该输入向量在低维空间中的位置.
+</li>
+<li>训练目的: 为每个输出层神经元找到合适的权向量, 以达到保持拓扑结构的目的
+</li>
+<li>训练过程: 在接收到一个训练样本后, 每个输出层神经元会计算该样本与自身携带的全向量之间的距离, 距离最近的神经元成为竞争获胜者, 称为最佳匹配单元. 然后, 最佳匹配单位及其临近神经元的权向量将被调整, 以使得这些权向量与当前输入样本的距离缩小. 这个过程不断迭代, 直至收敛.
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-5-4" class="outline-4">
+<h4 id="sec-5-5-4"><span class="section-number-4">5.5.4</span> 级联相关网络</h4>
+<div class="outline-text-4" id="text-5-5-4">
+<ul class="org-ul">
+<li>结构自适应神经网络/构造性神经网络/constructive networks
+<ul class="org-ul">
+<li>将网络结构也当作学习的目标之一, 并希望能在训练过程中找到最符合数据特点的网络结构.
+</li>
+</ul>
+</li>
+<li>级联相关网络/cascade-correlation networks
+<ul class="org-ul">
+<li>两个主要成分: 级联, 相关
+<ul class="org-ul">
+<li>级联: 建立层次连接的层次结构
+</li>
+<li>相关: 通过最大化新神经元的输出和网络误差之间的相关性来训练相关的参数
+</li>
+</ul>
+</li>
+<li>训练: 开始时, 网络只有输入层和输出层, 处于最小拓扑结构；随着训练的进行, 新的隐层神经元逐渐加入, 从而建立起层级结构. 当新的隐层神经元加入时, 其输入端连接权值是冻结固定的.
+</li>
+<li>特点: 无需设置网络层数, 隐层神经元数目；训练速度快；数据较少时易陷入过拟合
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-5-5" class="outline-4">
+<h4 id="sec-5-5-5"><span class="section-number-4">5.5.5</span> Elman 网络</h4>
+<div class="outline-text-4" id="text-5-5-5">
+<ul class="org-ul">
+<li>递归神经网络/recurrent neural networks/recursive neural networks
+<ul class="org-ul">
+<li>允许网络中出现环形结构, 从而可让一些神经元的输出反馈回来作为输入信号.
+</li>
+<li>这样的结构与信息反馈过程, 使得网络在t时刻的输出状态不仅和t时刻的输入有关, 还与t-1时刻的网络状态有关, 从而能处理与时间有关的动态变化
+</li>
+</ul>
+</li>
+<li>Elman网络
+<ul class="org-ul">
+<li>结构与多层前馈网络很相似, 但隐层神经元的输出被反馈回来, 与下一时刻输入层神经元提供的信号一起, 作为隐层神经元在下一时刻的输入. 隐层神经元通常采用sigmoid激活函数, 网络的训练通过推广的BP算法进行
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-5-6" class="outline-4">
+<h4 id="sec-5-5-6"><span class="section-number-4">5.5.6</span> Boltzmann机</h4>
+<div class="outline-text-4" id="text-5-5-6">
+<ul class="org-ul">
+<li>能量/energy
+<ul class="org-ul">
+<li>神经网络中有一类模型是为网络状态定义一个"能量", 能量最小化时网络达到理想状态, 而网络的训练就是在最小化这个能量函数
+</li>
+</ul>
+</li>
+<li>基于能量的模型/energy-based model
+</li>
+<li>Boltzmann机
+<ul class="org-ul">
+<li>一种基于能量的模型
+</li>
+<li>常见结构: 神经元分为两层: 显层和隐层
+<ul class="org-ul">
+<li>显层: 用于数据的输入和输出
+</li>
+<li>隐层: 被理解成数据的内在表达
+</li>
+</ul>
+</li>
+<li>神经元都是布尔型的, 只有0,1两种状态
+</li>
+<li>能量定义为: E(s) = -对i求和<sub>i</sub>(0-&gt;n-1)(对j求和<sub>j</sub>(i+1-&gt;n)(w<sub>ij</sub>*s<sub>i</sub>*s<sub>j</sub>)) - 对i求和<sub>i</sub>(1-&gt;n)(sita<sub>i</sub>*s<sub>i</sub>)
+<ul class="org-ul">
+<li>s表示n个神经元的状态{0, 1}
+</li>
+<li>w<sub>ij表示神经元i和j之间的连接权</sub>
+</li>
+<li>sita<sub>i表示神经元i的阈值</sub>
+</li>
+<li>若网络中的神经元以任意不依赖于输入值的顺序进行更新, 则网络最终将达到Boltzmann分布/平衡态, 此时状态向量s出现的概率将仅由其能量与所有可能状态向量的能量确定:
+<ul class="org-ul">
+<li>概率/P(s) = exp(-E(s))/对t求和(exp(-E(t)))
+</li>
+</ul>
+</li>
+<li>训练: 将每个训练样本视为一个状态向量, 使其出现的概率尽可能大.
+</li>
+<li>难点: 如何得到所有可能的状态向量
+</li>
+<li>受限的Boltzmann机/restricted boltzmann machine/RBM
+<ul class="org-ul">
+<li>结构中仅隐层和显层之间连接
+</li>
+</ul>
+</li>
+<li>对比散度/contrastive divergence/CD算法
+<ul class="org-ul">
+<li>令v和h分别表示显层和隐层的状态向量, 则由于同一层内不存在连接, 有
+<ul class="org-ul">
+<li>P(v|h) = 对i求乘积(P(v<sub>i|h</sub>))
+</li>
+<li>P(h|v) = 对j求乘积(P(h<sub>j|v</sub>))
+</li>
+</ul>
+</li>
+<li>对每个训练样本v, 先计算出隐层神经元状态的概率分布, 然后根据这个概率分布采样得到h, 从h产生v',可以从v'产生h'
+<ul class="org-ul">
+<li>连接权的更新公式: delta<sub>w</sub> = sigma*(v*h<sup>T</sup> - v'*h'<sup>T</sup>)
+</li>
+<li>阈值更新
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-5-5-7" class="outline-4">
+<h4 id="sec-5-5-7"><span class="section-number-4">5.5.7</span> 深度学习</h4>
+<div class="outline-text-4" id="text-5-5-7">
+<ul class="org-ul">
+<li>容量/capacity
+<ul class="org-ul">
+<li>todo 参见12章
+</li>
+</ul>
+</li>
+<li>深度学习/deep learning
+<ul class="org-ul">
+<li>典型: 很深层的神经网络
+</li>
+</ul>
+</li>
+<li>发散/diverge
+<ul class="org-ul">
+<li>与收敛相对的概念
+</li>
+<li>训练无法收敛, 训练次数n &#x2013;&gt; 无穷, 训练误差 -/-&gt; 某个值
+</li>
+</ul>
+</li>
+<li>无监督逐层学习/unsupervised layer-wise training
+<ul class="org-ul">
+<li>基本思想: 预训练+微调
+</li>
+</ul>
+</li>
+<li>预训练/pre-training
+<ul class="org-ul">
+<li>每次训练一层的隐结点, 训练时将上一层的隐结点的输出作为输入, 而本层隐结点的输出作为下一层隐结点的输入.
+</li>
+</ul>
+</li>
+<li>微调/fine-tuning
+</li>
+<li>深度信念网络/deep belief network/DBN
+<ul class="org-ul">
+<li>每一层是一个受限的Boltzmann机
+</li>
+<li>整个网络可视为若干个RBM堆叠
+</li>
+<li>利用无监督逐层学习
+</li>
+</ul>
+</li>
+<li>预训练+微调
+</li>
+<li>权共享/weight sharing
+<ul class="org-ul">
+<li>让一组神经元使用相同的连接权
+</li>
+<li>代表: 卷积神经网络
+</li>
+</ul>
+</li>
+<li>卷积神经网络/convolutional neural network/CNN
+<ul class="org-ul">
+<li>包含: 卷积层和采样层对输入信号进行加工, 连接层实现与输出目标之间的映射
+</li>
+<li>每个卷积层包含多个特征映射/feature map
+<ul class="org-ul">
+<li>每个特征映射是由多个神经元构成的"平面", 通过一种卷积滤波器提取输入的一种特征
+</li>
+</ul>
+</li>
+<li>采样层亦称汇合层/pooling, 其作用是基于局部相关性进行亚采样, 从而减少数据量的同时保留有用信息.
+</li>
+</ul>
+</li>
+<li>特征学习/feature learning/表示学习/representation learning
+<ul class="org-ul">
+<li>深度神经网络经过多层处理, 逐渐将初始的"低层"特征表示转化为"高层"表示后, 用"简单模型"即可完成复杂的分类等学习任务. 可将这一过程理解为特征学习
+</li>
+</ul>
+</li>
+<li>特征工程/feature engineering
+<ul class="org-ul">
+<li>描述样本的特征由人类专家来设计
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> 第6章 支持向量机</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> 间隔与支持向量</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>超平面
+<ul class="org-ul">
+<li>在数学中，超平面(Hyperplane)是n维欧氏空间中，余维度为1的子空间。即超平面是n维空间中的n-1维的子空间。它是平面中的直线、空间中的平面之推广。
+</li>
+<li>n维空间中的超平面可定义为：线性函数 w<sup>T</sup>*x=b，其中w，x为n维向量，w不全为零
+</li>
+</ul>
+</li>
+<li>欧氏空间
+<ul class="org-ul">
+<li>欧几里得空间
+</li>
+<li>一句话总结：欧几里得空间就是在对现实空间的规则抽象和推广（从n&lt;=3推广到有限n维空间）。
+</li>
+<li>欧几里得几何就是中学学的平面几何、立体几何，在欧几里得几何中，平行线任何位置的间距相等。
+</li>
+</ul>
+</li>
+<li>划分超平面
+<ul class="org-ul">
+<li>即超平面, 样本空间中任意点到超平面的距离：r = |w<sup>T</sup>*x+b|/||w||
+</li>
+<li>可用于二分类划分
+<ul class="org-ul">
+<li>w<sup>T</sup>*x<sub>i</sub> + b &gt;= +1, y<sub>i</sub> = +1
+</li>
+<li>w<sup>T</sup>*x<sub>i</sub> + b &lt;= -1, y<sub>i</sub> = -1
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>支持向量/support vector
+<ul class="org-ul">
+<li>距离划分超平面最近的样本，即满足上述等式的样本
+</li>
+</ul>
+</li>
+<li>间隔/margin
+<ul class="org-ul">
+<li>两个异类支持向量到超平面的距离：gama = 2/||w||
+</li>
+</ul>
+</li>
+<li>支持向量机/Support Vector Machine/SVM基本型
+<ul class="org-ul">
+<li>满足训练样本超平面可分，最大化间隔，求解w，b
+</li>
+<li>即
+<ul class="org-ul">
+<li>min 1/2*||w||<sup>2</sup>
+</li>
+<li>s.t. y<sub>i</sub>(w<sup>T</sup>*x<sub>i</sub> + b) &gt;= 1, i=1,2,&#x2026;,m
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2"><span class="section-number-3">6.2</span> 对偶问题</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>线性规划/Linear Programming问题
+<ul class="org-ul">
+<li>研究线性约束条件下线性目标函数的极值问题的数学理论和方法
+</li>
+</ul>
+</li>
+<li>二次规划问题
+<ul class="org-ul">
+<li>特殊类型的优化问题
+</li>
+<li>一个有n个变数与m个限制的二次规划问题可以用以下的形式描述。
+<ul class="org-ul">
+<li>首先给定：
+<ul class="org-ul">
+<li>一个n 维的向量 c
+</li>
+<li>一个n × n 维的对称矩阵Q
+</li>
+<li>一个m × n 维的矩阵A
+</li>
+<li>一个m 维的向量 b
+</li>
+</ul>
+</li>
+<li>则此二次规划问题的目标即是在限制条件为
+<ul class="org-ul">
+<li>A*x &lt;= b
+</li>
+</ul>
+</li>
+<li>找一个n 维的向量 x
+</li>
+<li>最小化
+<ul class="org-ul">
+<li>f(x) = (1/2)*x<sup>T</sup>*Q*x + c<sup>T</sup>*x
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>凸二次规划/convex quadratic programming问题
+<ul class="org-ul">
+<li>如果Q是半正定矩阵，那么f(x)是一个凸函数, 此时为凸二次规划问题
+</li>
+<li>此时若约束条件定义的可行域不为空，且目标函数在此可行域有下界，则该问题有全局最小值。
+</li>
+</ul>
+</li>
+<li>对偶问题/dual problem
+<ul class="org-ul">
+<li>对偶问题：每一个规划问题都伴随有另一个规划问题，称为对偶问题。
+</li>
+<li>原来的线性规划问题则称为原始线性规划问题，简称原始问题。
+</li>
+<li>对偶问题有许多重要的特征, 它的变量能提供关于原始问题最优解的许多重要资料，有助于原始问题的求解和分析。
+</li>
+<li>对偶问题与原始问题之间存在着下列关系：
+<ul class="org-ul">
+<li>①目标函数对原始问题是极大化，对偶问题则是极小化。
+</li>
+<li>②原始问题目标函数中的收益系数是对偶问题约束不等式中的右端常数，而原始问题约束不等式中的右端常数则是对偶问题中目标函数的收益系数。
+</li>
+<li>③原始问题和对偶问题的约束不等式的符号方向相反。
+</li>
+<li>④原始问题约束不等式系数矩阵转置后即为对偶问题的约束不等式的系数矩阵。
+</li>
+<li>⑤原始问题的约束方程数对应于对偶问题的变量数，而原始问题的变量数对应于对偶问题的约束方程数。
+</li>
+<li>⑥对偶问题的对偶问题是原始问题，这一性质被称为原始和对偶问题的对称性。
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SMO/Sequential Minimal Optimization
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-3" class="outline-3">
+<h3 id="sec-6-3"><span class="section-number-3">6.3</span> 核函数</h3>
+<div class="outline-text-3" id="text-6-3">
+<ul class="org-ul">
+<li>核技巧/kernel trick
+<ul class="org-ul">
+<li>将样本映射到特征空间后，其內积可用样本输入到核函数中计算。即k(x<sub>i</sub>, x<sub>j</sub>) = phi(x<sub>i</sub>)<sup>T</sup> * phi(x<sub>j</sub>)
+</li>
+</ul>
+</li>
+<li>核函数/kernel function
+<ul class="org-ul">
+<li>k(.,.)
+</li>
+</ul>
+</li>
+<li>支持向量展式/support vector expansion
+<ul class="org-ul">
+<li>使用核函数带入到支持向量求解问题
+</li>
+</ul>
+</li>
+<li>核函数定理
+<ul class="org-ul">
+<li>令X为输入空间, k(.,.)是定义在X * X上的对称函数, 则k是核函数，当且仅当
+<ul class="org-ul">
+<li>任意输入数据D = [x<sub>1</sub>, &#x2026;, x<sub>n]</sub>, 核矩阵是半正定的
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>对称函数
+<ul class="org-ul">
+<li>f(x,y) = f(y,x)
+</li>
+</ul>
+</li>
+<li>核矩阵/kernel matrix
+<ul class="org-ul">
+<li>K = matrix{k<sub>i</sub>,j}
+<ul class="org-ul">
+<li>k<sub>i</sub>,j = k(x<sub>i</sub>, x<sub>j</sub>)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>再生核希尔伯特空间/Reproducing Kernel Hilbert Space/RKHS的特征空间
+<ul class="org-ul">
+<li>希尔伯特空间
+<ul class="org-ul">
+<li>在数学裡，希尔伯特空间（英語：Hilbert space）即完备的内积空间，也就是一個帶有內積的完備向量空間。
+</li>
+<li>希尔伯特空间是有限维欧几里得空间的一个推广，使之不局限于實數的情形和有限的维数，但又不失完备性（而不像一般的非欧几里得空间那样破坏了完备性）
+</li>
+</ul>
+</li>
+<li>由核函数隐式定义
+</li>
+</ul>
+</li>
+<li>常见核函数
+<ul class="org-ul">
+<li>线性核：k(x<sub>i</sub>, x<sub>j</sub>) = x<sub>i</sub><sup>T</sup>*x<sub>j</sub>
+</li>
+<li>多项式核：k(x<sub>i</sub>, x<sub>j</sub>) = (x<sub>i</sub><sup>T</sup>*x<sub>j</sub>)<sup>d</sup>
+</li>
+<li>高斯核：k(x<sub>i</sub>, x<sub>j</sub>) = exp(-||x<sub>i</sub>-x<sub>j||</sub><sup>2</sup>/(2*sigma<sup>2</sup>)), sigma &gt; 0
+</li>
+<li>拉普拉斯核： k(x<sub>i</sub>, x<sub>j</sub>) = exp(-||x<sub>i</sub>-x<sub>j||</sub>/sigma), sigma &gt;0
+</li>
+<li>Sigmoid核：k(x<sub>i</sub>, x<sub>j</sub>) = tanh(beta*x<sub>i</sub><sup>T</sup>*x<sub>j</sub> + sita)
+</li>
+</ul>
+</li>
+<li>核函数性质
+<ul class="org-ul">
+<li>k1,k2是核函数，则对于任意正数gama1，gama2，其线性组合，gama1*k1+gama2*k2也是核函数
+</li>
+<li>k1,k2是核函数，则核函数的直积k1(.)k2(x,z) = k1(x,z)*k2(x,z)
+</li>
+<li>k1为核函数，则对于任意函数g(x), k(x,z) = g(x)*k1(x,z)*g(z)也是核函数
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-4" class="outline-3">
+<h3 id="sec-6-4"><span class="section-number-3">6.4</span> 软间隔与正则化</h3>
+<div class="outline-text-3" id="text-6-4">
+<ul class="org-ul">
+<li>软间隔/soft margin
+<ul class="org-ul">
+<li>功能：允许支持向量机在一些样本上出错
+</li>
+<li>优化目标：min（1/2||w||<sup>2</sup> + C*l<sub>01</sub>(y<sub>i</sub>*(w<sup>T</sup>*x<sub>i</sub>+b)-1)),
+<ul class="org-ul">
+<li>其中l<sub>01</sub>(z)
+<ul class="org-ul">
+<li>1, if z &lt; 0
+</li>
+<li>0, otherwize
+</li>
+</ul>
+</li>
+<li>当C为无穷大时，软间隔同硬间隔，C为有限值时，允许一些样本不满足约束
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>硬间隔/hard margin
+<ul class="org-ul">
+<li>要求所有样本都必须划分正确
+</li>
+</ul>
+</li>
+<li>代替损失/surrogate loss函数
+<ul class="org-ul">
+<li>因为l<sub>01非凸，非连续，数学性质不太好，则人们使用其他数学性质较好，同l</sub><sub>01同功能</sub>(惩罚划分错误)的函数
+</li>
+</ul>
+</li>
+<li>常见代替损失
+<ul class="org-ul">
+<li>hinge损失：l<sub>hinge</sub>(z) = max(0, 1-z)
+</li>
+<li>指数损失/exponential loss: l<sub>exp</sub>(z) = exp(-z)
+</li>
+<li>对率损失/logistic loss: l<sub>log</sub>(z) = log(1+exp(-z))
+</li>
+</ul>
+</li>
+<li>松弛变量/slack variable
+<ul class="org-ul">
+<li>损失函数改写成一个变量
+</li>
+</ul>
+</li>
+<li>软间隔支持向量机
+<ul class="org-ul">
+<li>优化目标：min（1/2*||w||<sup>2</sup> + C对i求和(sigma<sub>i</sub>)）
+</li>
+<li>s.t. y<sub>i</sub>*(w<sup>T</sup>*x<sub>i</sub> + b) &gt;= 1 - sigma<sub>i</sub>, sigma<sub>i</sub> &gt;= 0
+</li>
+</ul>
+</li>
+<li>结构风险/structural risk
+<ul class="org-ul">
+<li>优化函数中，用于描述函数f的某些性质
+</li>
+<li>类似于正则化的功能，引入领域知识和用户意图，减少过拟合风险
+</li>
+</ul>
+</li>
+<li>经验风险/empirial risk
+<ul class="org-ul">
+<li>优化函数中， 用于描述模型与训练数据的契合程度
+</li>
+</ul>
+</li>
+<li>正则化/regularization
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-5" class="outline-3">
+<h3 id="sec-6-5"><span class="section-number-3">6.5</span> 支持向量回归</h3>
+<div class="outline-text-3" id="text-6-5">
+<ul class="org-ul">
+<li>支持向量回归/Support Vector Regression/SVR
+<ul class="org-ul">
+<li>与传统回归问题的不同
+<ul class="org-ul">
+<li>容忍f(x)与y之间最多有sigma的偏差，即仅当f(x)与y之间的差别绝对值大于sigma时才计算损失
+</li>
+</ul>
+</li>
+<li>优化问题
+<ul class="org-ul">
+<li>min（1/2*||w||<sup>2</sup> + C*对i求和(l<sub>sigma</sub>(f(x<sub>i</sub>)-y<sub>i</sub>))
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>sigma-不敏感损失/sigma-insensitive loss
+<ul class="org-ul">
+<li>l<sub>sigma</sub>
+<ul class="org-ul">
+<li>0, if |z|&lt;=sigma
+</li>
+<li>|z|-sigma, otherwise
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-6" class="outline-3">
+<h3 id="sec-6-6"><span class="section-number-3">6.6</span> 核方法</h3>
+<div class="outline-text-3" id="text-6-6">
+<ul class="org-ul">
+<li>表达定理/representer theorem
+<ul class="org-ul">
+<li>条件
+<ul class="org-ul">
+<li>令H为核函数k对应的再生核希尔伯特空间
+</li>
+<li>||h||<sub>H表示H空间中关于h的范数</sub>
+</li>
+<li>对于任意单调递增函数g：[0, 正无穷] &#x2013;&gt; R
+</li>
+<li>任意非负损失函数l：R<sup>m</sup> &#x2013;&gt; [0, 正无穷]
+</li>
+</ul>
+</li>
+<li>优化问题
+<ul class="org-ul">
+<li>min F(h) = g(||h||<sub>H</sub>) + l(h(x<sub>1</sub>),h(x<sub>2</sub>),&#x2026;,h(x<sub>m</sub>))
+</li>
+</ul>
+</li>
+<li>解
+<ul class="org-ul">
+<li>h<sup>*</sup>(x) = 对i求和(alpha<sub>i</sub>*k(x,x<sub>i</sub>))
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>核方法/kernel methods
+<ul class="org-ul">
+<li>基于核函数的学习方法
+</li>
+<li>常见，通过核函数将线性学习器拓展为非线性学习器
+</li>
+</ul>
+</li>
+<li>核化
+<ul class="org-ul">
+<li>引入核函数
+</li>
+</ul>
+</li>
+<li>核线性判别分析/Kernelized Linear Discriminant Analysis/KLDA
+<ul class="org-ul">
+<li>假设
+<ul class="org-ul">
+<li>g：X&#x2013;&gt;F 将样本映射到特征空间F
+</li>
+<li>在F中执行线性判别分析，求h(x) = w<sup>T</sup>*g(x)
+</li>
+</ul>
+</li>
+<li>利用线性判别分析和表达定理，求解alpha和h
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6-7" class="outline-3">
+<h3 id="sec-6-7"><span class="section-number-3">6.7</span> 阅读材料</h3>
+<div class="outline-text-3" id="text-6-7">
+<ul class="org-ul">
+<li>LIBSVM
+<ul class="org-ul">
+<li>SVM著名的软件包
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> 第7章 贝叶斯分类器</h2>
+<div class="outline-text-2" id="text-7">
+</div><div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1"><span class="section-number-3">7.1</span> 贝叶斯决策论</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>贝叶斯决策论/Bayesian decision theory
+<ul class="org-ul">
+<li>概率框架下实施决策的基本方法
+</li>
+<li>对分类任务来说，在所有相关概率都已知的理想情况下，贝叶斯决策论考虑如何基于这些概率和误判损失来选择最优的类别标记
+</li>
+</ul>
+</li>
+<li>期望损失/expected loss/风险/risk
+<ul class="org-ul">
+<li>将x分类为c<sub>i所产生的期望损失</sub>
+</li>
+<li>R(c<sub>i|x</sub>) = 对j求和(lambda<sub>ij</sub> * P(c<sub>j|x</sub>))
+<ul class="org-ul">
+<li>有N中可能的类别，Y = {c<sub>1</sub>, c<sub>2</sub>, &#x2026;, c<sub>N</sub>}
+</li>
+<li>lambda<sub>ij是将一个真实标记为c</sub><sub>j的样本误分类为c</sub><sub>i产生的损失</sub>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>总体风险
+<ul class="org-ul">
+<li>R(h) = E<sub>x[R</sub>(h(x)|x)]
+<ul class="org-ul">
+<li>判定准则h：X &#x2013;&gt; Y
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>贝叶斯判定准则/Bayes decision rule
+<ul class="org-ul">
+<li>为最小化总体风险，只需在每个样本上选择哪个能使条件风险R(c|x)最小的类别标记，即
+<ul class="org-ul">
+<li>h<sup>*</sup>(x) = argmin<sub>c</sub>(R(c|x))
+</li>
+</ul>
+</li>
+<li>使用此准则最小化决策风险，首先要获得后验概率P(c|x)
+</li>
+</ul>
+</li>
+<li>贝叶斯最优分类器/Bayes optimal classifier
+<ul class="org-ul">
+<li>上面的h<sup>*</sup>
+</li>
+</ul>
+</li>
+<li>贝叶斯风险/Bayes risk
+<ul class="org-ul">
+<li>贝叶斯最优分类器对应的总体风险R(h<sup>*</sup>)
+</li>
+<li>机器学习所能产生模型的风险下限
+</li>
+</ul>
+</li>
+<li>判别式模型/discriminative models
+<ul class="org-ul">
+<li>估计P(c|x)的方法
+</li>
+<li>直接建模P(c|x)来预测c
+</li>
+</ul>
+</li>
+<li>生成式模型/generative models
+<ul class="org-ul">
+<li>估计P(c|x)的方法
+</li>
+<li>先对联合概率分布P(x, c)建模，然后再由此获得P(c|x)
+<ul class="org-ul">
+<li>P(c|x) = P(x,c)/P(x)
+</li>
+<li>P(c|x) = P(c)*P(x|c)/P(x)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>先验/prior概率
+<ul class="org-ul">
+<li>P(c)
+</li>
+</ul>
+</li>
+<li>条件概率/class-conditional probability/似然/likelihood
+<ul class="org-ul">
+<li>P(x|c)，样本x相对于类标签c的类条件概率
+</li>
+</ul>
+</li>
+<li>证据/evidence因子
+<ul class="org-ul">
+<li>P(x), 用于归一化
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-7-2" class="outline-3">
+<h3 id="sec-7-2"><span class="section-number-3">7.2</span> 极大似然估计</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li>参数估计/parameter estimation
+<ul class="org-ul">
+<li>概率模型的训练过程
+<ul class="org-ul">
+<li>估计类条件概率的常用策略是先假设其固有某种确定的概率分布形式，再基于训练样本对概率分布的参数进行估计
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>频率主义学派/Frequentist
+<ul class="org-ul">
+<li>认为参数虽然未知，但却是客观存在的固定值；因此，可以通过优化似然函数等准则来确定参数值
+</li>
+</ul>
+</li>
+<li>贝叶斯学派/Bayesian
+<ul class="org-ul">
+<li>认为参数是未观察到的随机变量，其本身也可有分布；因此，可假定参数服从一个先验分布，然后基于观测到的数据来计算参数的后验分布
+</li>
+</ul>
+</li>
+<li>极大似然估计/Maximum Likelihood Estimation/MLE
+<ul class="org-ul">
+<li>步骤
+<ul class="org-ul">
+<li>假设样本独立同分布，得到对数似然函数
+</li>
+<li>通过最大化对数似然函数，求参数
+</li>
+</ul>
+</li>
+<li>优点
+<ul class="org-ul">
+<li>简单
+</li>
+</ul>
+</li>
+<li>缺点
+<ul class="org-ul">
+<li>结果准确性严重依赖假设的概率分布
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>似然函数
+<ul class="org-ul">
+<li>P(D<sub>c|sita</sub><sub>c</sub>) = 对属于D<sub>c的x求乘积</sub>(P(x|sita<sub>c</sub>))
+</li>
+</ul>
+</li>
+<li>对数似然/log-likelihood
+<ul class="org-ul">
+<li>对似然函数求对数
+</li>
+<li>LL(sita<sub>c</sub>) = log(P(D<sub>c|sita</sub><sub>c</sub>))
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-7-3" class="outline-3">
+<h3 id="sec-7-3"><span class="section-number-3">7.3</span> 朴素贝叶斯分类器</h3>
+<div class="outline-text-3" id="text-7-3">
+<ul class="org-ul">
+<li>朴素贝叶斯分类器/naive Bayes classifier
+<ul class="org-ul">
+<li>假设
+<ul class="org-ul">
+<li>因为，条件概率P(x|c)是所有属性上的联合概率，难以从有限的训练样本中直接估算
+</li>
+<li>所以，采用“属性条件独立性假设”
+</li>
+</ul>
+</li>
+<li>表达式
+<ul class="org-ul">
+<li>h<sub>nb</sub>(x) = argmax(P(c)*对i求乘积(P(x<sub>i|c</sub>)))
+<ul class="org-ul">
+<li>P(c) = |D<sub>c|</sub>/|D|, 当独立同分布样本充足
+</li>
+<li>离散属性
+<ul class="org-ul">
+<li>P(x<sub>i|c</sub>) = |D<sub>c</sub>,x<sub>i|</sub>/|D<sub>c|</sub>
+</li>
+</ul>
+</li>
+<li>连续属性
+<ul class="org-ul">
+<li>假设p(x<sub>i|c</sub>) ~ 高斯分布N(u<sub>c</sub>,i,sigma<sup>2</sup><sub>c</sub>,i)
+</li>
+<li>高斯分布参数使用统计方式求解
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>属性条件独立性假设/attribute conditional independence assumption
+<ul class="org-ul">
+<li>P(c|x) = P(c)*P(x|c)/P(x) = P(c)/P(x)*对i求乘积(P(x<sub>i|c</sub>))
+</li>
+</ul>
+</li>
+<li>平滑/smoothing
+<ul class="org-ul">
+<li>为了避免其他属性携带的信息被训练集中 <b>未出现的属性值</b> ”抹去“，在估计概率时通常要进行“平滑”
+</li>
+<li>常用拉普拉斯修正
+</li>
+</ul>
+</li>
+<li>拉普拉斯修正/Laplacian correction
+<ul class="org-ul">
+<li>修正结果
+<ul class="org-ul">
+<li>P(c) = (|D<sub>c|</sub>+1)/(|D|+N)
+<ul class="org-ul">
+<li>N表示训练集D中可能的类别数
+</li>
+</ul>
+</li>
+<li>P(x<sub>i|c</sub>) = (|D<sub>c</sub>,xi|+1)/(|D<sub>c|</sub>+N<sub>i</sub>)
+<ul class="org-ul">
+<li>N<sub>i表示第i个属性可能的取值数</sub>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>懒惰学习/lazy learning
+<ul class="org-ul">
+<li>先不进行任何训练，待收到预测请求时再根据当前数据集进行估值
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-7-4" class="outline-3">
+<h3 id="sec-7-4"><span class="section-number-3">7.4</span> 半朴素贝叶斯分类器</h3>
+<div class="outline-text-3" id="text-7-4">
+<ul class="org-ul">
+<li>半朴素贝叶斯分类器/semi-naive Bayes classifiers
+<ul class="org-ul">
+<li>解决问题
+<ul class="org-ul">
+<li>属性条件独立性假设，通常难以成立
+</li>
+</ul>
+</li>
+<li>基本想法
+<ul class="org-ul">
+<li>适当考虑一部分属性间的相互依赖信息，从而既不需要进行完全联合概率计算，又不至于彻底忽略了比较强的属性依赖关系
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>独依赖估计/One-Dependent Estimator/ODE
+<ul class="org-ul">
+<li>半朴素贝叶斯分类器中最常用的一种策略
+</li>
+<li>每个属性在类别之外最多仅依赖一个其他属性
+<ul class="org-ul">
+<li>P(c|x) 同比 P(c)*对i求乘积(P(x<sub>i|c</sub>,pa<sub>i</sub>))
+<ul class="org-ul">
+<li>pa<sub>i为属性x</sub><sub>i所依赖的属性，成为x</sub><sub>i的父属性</sub>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>超父/super-parent
+<ul class="org-ul">
+<li>最直接的做法是假设所有属性依赖同一属性，此属性成为超父
+</li>
+</ul>
+</li>
+<li>SPODE/Super-Parent ODE
+<ul class="org-ul">
+<li>利用交叉验证等模型选择方法来确定超父属性
+</li>
+</ul>
+</li>
+<li>TAN/Tree Augmented naive Bayes
+</li>
+<li>最大带权生成树/maximum weighted spanning tree
+</li>
+<li>条件互信息/conditional mutual information
+</li>
+<li>AODE/Averaged One-Dependent Estimator
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-7-5" class="outline-3">
+<h3 id="sec-7-5"><span class="section-number-3">7.5</span> 贝叶斯网</h3>
+<div class="outline-text-3" id="text-7-5">
+<ul class="org-ul">
+<li>贝叶斯网/Bayesian network/信念网/belief network
+<ul class="org-ul">
+<li>借助有向无环图来刻画属性之间的依赖关系, 并使用条件概率表(假定所有属性均为离散型)来描述属性的联合概率分布
+</li>
+<li>由结构G和参数sita组成, 即B=&lt;G,sita&gt;
+<ul class="org-ul">
+<li>G是一个有向无环图
+<ul class="org-ul">
+<li>两个属性有直接依赖关系则两者相连
+</li>
+<li>有效地表达了属性间的条件独立性.
+<ul class="org-ul">
+<li>给定父结点集, 贝叶斯网假设每个属性与它的非后裔属性独立
+</li>
+<li>P<sub>B</sub>(x<sub>1</sub>, x<sub>2</sub>, &#x2026;, x<sub>d</sub>) = 对i求乘积(P<sub>B</sub>(x<sub>i|pi</sub><sub>i</sub>)) = 对i求乘积(sita<sub>x</sub><sub>i|pi</sub><sub>i</sub>)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>sita是定量描述这种依赖关系
+<ul class="org-ul">
+<li>假设属性x<sub>i在G中的父结点集是pi</sub><sub>i</sub>, 则sita包含了每个属性的条件概率表sita<sub>x</sub><sub>i|pi</sub><sub>i</sub> = P<sub>B</sub>(x<sub>i|pi</sub><sub>i</sub>)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>有向无环图/Directed Acyclic Graph/DAG
+</li>
+<li>条件概率表/Conditional Probability Table/CPT
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-7-5-1" class="outline-4">
+<h4 id="sec-7-5-1"><span class="section-number-4">7.5.1</span> 结构</h4>
+<div class="outline-text-4" id="text-7-5-1">
+<ul class="org-ul">
+<li>同父/common parent结构
+<ul class="org-ul">
+<li>x<sub>1</sub> &#x2013;&gt; x<sub>3</sub>, x<sub>1</sub> &#x2013;&gt; x<sub>4</sub>
+<ul class="org-ul">
+<li>给定x<sub>1的取值</sub>, 则x<sub>3</sub>,x<sub>4独立</sub>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>顺序结果
+<ul class="org-ul">
+<li>z &#x2013;&gt; x, x &#x2013;&gt; y
+<ul class="org-ul">
+<li>给定x的值, y与z条件独立
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>V型结构/V-structure
+<ul class="org-ul">
+<li>x<sub>1</sub> &#x2013;&gt; x<sub>4</sub>, x<sub>2</sub> &#x2013;&gt; x<sub>4</sub>
+<ul class="org-ul">
+<li>给定子结点x<sub>4的取值</sub>,x<sub>1</sub>,x<sub>2必不独立</sub>
+</li>
+<li>x<sub>4的取值完全未知</sub>, 则V型结构下x<sub>1与x</sub><sub>2是相互独立的</sub>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>边界独立性/marginal independence
+<ul class="org-ul">
+<li>对变量做积分或求和亦称为边际化
+</li>
+<li>通过边际化得到的独立关系
+<ul class="org-ul">
+<li>比如
+<ul class="org-ul">
+<li>V型结构x<sub>1</sub>,x<sub>2对x</sub><sub>4积分得到独立关系</sub>
+</li>
+<li>同父结构, x<sub>3</sub>, x<sub>4无法对x</sub><sub>1积分得到独立关系</sub>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>有向分离/D-separation
+<ul class="org-ul">
+<li>把有向图转化为无向图
+<ul class="org-ul">
+<li>找到有向图中所有的V型结构, 在V型结构的两个父结点之间加上一条无向边
+</li>
+<li>将所有的有向边改为无向边
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>道德图/moral graph
+<ul class="org-ul">
+<li>有向分离得到的无向图称为道德图
+</li>
+<li>基于道德图能直观,迅速地找到变量间的条件独立性.
+<ul class="org-ul">
+<li>假定道德图中有变量x,y和变量集合z={z<sub>i</sub>}, 若变量x和y在图上被z分开, 即从道德图中将变量集合z去除后, x和y分属两个连通分支, 则称变量x和y被z有向分离, x独立y|z成立
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>道德化/moralization
+<ul class="org-ul">
+<li>将父结点相连的过程称为道德化
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-7-5-2" class="outline-4">
+<h4 id="sec-7-5-2"><span class="section-number-4">7.5.2</span> 学习</h4>
+<div class="outline-text-4" id="text-7-5-2">
+<ul class="org-ul">
+<li>评分搜索
+<ul class="org-ul">
+<li>根据训练数据来找出结构最恰当的贝叶斯网
+</li>
+</ul>
+</li>
+<li>评分函数/score function
+<ul class="org-ul">
+<li>用于评估贝叶斯网与训练数据的契合程度
+</li>
+<li>通常基于信息论准则, 将学习问题看作一个数据压缩任务
+<ul class="org-ul">
+<li>学习的目标是找到一个能以 <b>最短编码长度</b> 描述训练数据的模型
+<ul class="org-ul">
+<li>此时编码长度包含了描述模型自身所需的编码位数 和 使用该模型描述数据所需要的编码位数
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>给定训练集D={x<sub>1</sub>,&#x2026;x<sub>m</sub>}, 贝叶斯网B=&lt;G,sita&gt;在D上的评分函数可写为
+<ul class="org-ul">
+<li>s(B|D) = f(sita)|B|-LL(B|D)
+<ul class="org-ul">
+<li>|B|是贝叶斯网的参数个数
+</li>
+<li>f(sita)表示描述每个参数sita所需要的编码位数
+</li>
+<li>LL(B|D) = 对i求和(log(P<sub>B</sub>(x<sub>i</sub>))), 贝叶斯网的对数似然
+</li>
+<li>第一项是计算编码贝叶斯网B所需要的编码位数
+</li>
+<li>第二项是计算B所对应的概率分布P<sub>B对D描述得有多好</sub>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>信息论准则
+</li>
+<li>最小描述长度/Minimal Description Length/MDL准则
+<ul class="org-ul">
+<li>选择综合编码长度(描述网络和编码数据)最短的贝叶斯网
+<ul class="org-ul">
+<li>对贝叶斯学习而言, 模型就是一个贝叶斯网
+</li>
+<li>同时, 每个贝叶斯网描述了一个在训练数据上的概率分布, 自有一套编码机制能使那些经常出现的样本有更短的编码
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>AIC/Akaike Information Criterion评分函数
+<ul class="org-ul">
+<li>f(sita) = 1, 即每个参数用1编码位描述
+</li>
+</ul>
+</li>
+<li>BIC/Bayesian Information Criterion评分函数
+<ul class="org-ul">
+<li>f(sita) = 1/2*log(m), 即每个参数用1/2*log(m)编码位描述
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-7-5-3" class="outline-4">
+<h4 id="sec-7-5-3"><span class="section-number-4">7.5.3</span> 推断</h4>
+<div class="outline-text-4" id="text-7-5-3">
+<ul class="org-ul">
+<li>查询/query
+<ul class="org-ul">
+<li>通过一些属性变量的观测值来推测其他属性变量的取值
+</li>
+</ul>
+</li>
+<li>推断/inference
+<ul class="org-ul">
+<li>通过已知变量观测值来推测待查询变量的过程
+</li>
+</ul>
+</li>
+<li>证据/evidence
+<ul class="org-ul">
+<li>已知变量观测值
+</li>
+</ul>
+</li>
+<li>吉布斯采样/Gibbs sampling
+<ul class="org-ul">
+<li>输入
+<ul class="org-ul">
+<li>贝叶斯网 B=&lt;G,sita&gt;
+</li>
+<li>采样次数T
+</li>
+<li>证据变量E及其值e
+</li>
+<li>待查询变量Q及其值q
+</li>
+</ul>
+</li>
+<li>过程
+<ul class="org-ul">
+<li>n<sub>q</sub>=0
+</li>
+<li>q<sup>0</sup>=对Q的随机赋初值
+</li>
+<li>for t=1,2,&#x2026;,T do
+<ul class="org-ul">
+<li>for Q<sub>i属于Q</sub> do
+<ul class="org-ul">
+<li>Z=E并Q\{Q<sub>i</sub>}
+</li>
+<li>z=e并q<sup>t</sup>-1\q<sub>i</sub><sup>t</sup>-1
+</li>
+<li>根据B计算分布P<sub>B</sub>(Q<sub>i|Z</sub>=z)
+</li>
+<li>q<sub>i</sub><sup>t</sup>=根据P<sub>B</sub>(Q<sub>i|Z</sub>=z)采样所获Q<sub>i取值</sub>
+</li>
+<li>q<sup>t</sup>=将q<sup>t</sup>-1中的q<sub>i</sub><sup>t</sup>-1用q<sub>i</sub><sup>t替换</sup>
+</li>
+</ul>
+</li>
+<li>end for
+</li>
+<li>if q<sup>t</sup>-q then
+<ul class="org-ul">
+<li>n<sub>q</sub>=n<sub>q</sub>+1
+</li>
+</ul>
+</li>
+<li>end if
+</li>
+</ul>
+</li>
+<li>end for
+</li>
+</ul>
+</li>
+<li>输出
+<ul class="org-ul">
+<li>P(Q=q|E=e) ~=n<sub>q</sub>/T
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>随机漫步/random walk
+<ul class="org-ul">
+<li>每一步仅依赖前一步的状态
+</li>
+</ul>
+</li>
+<li>马尔科夫链/Markov chain
+</li>
+<li>平稳分布/stationary distribution
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-7-6" class="outline-3">
+<h3 id="sec-7-6"><span class="section-number-3">7.6</span> EM算法</h3>
+<div class="outline-text-3" id="text-7-6">
+<ul class="org-ul">
+<li>隐变量/latent variable
+<ul class="org-ul">
+<li>未观测变量
+</li>
+</ul>
+</li>
+<li>边际似然/marginal likelihood
+<ul class="org-ul">
+<li>LL(sita|X,Z)=lnP(X,Z|sita)
+<ul class="org-ul">
+<li>sita模型参数, X已观测变量集, Z隐变量集
+</li>
+</ul>
+</li>
+<li>边界似然: LL(sita|X) = lnP(X|sita)=ln对Z求和(P(X,Z|sita))
+</li>
+</ul>
+</li>
+<li>EM/Expectation-Maximization算法
+<ul class="org-ul">
+<li>常用估计参数隐变量的利器, 一种迭代方法
+</li>
+<li>基本想法
+<ul class="org-ul">
+<li>若参数sita已知, 则可根据训练数据推断出最优隐变量Z的值(E步)
+</li>
+<li>若Z的值已知, 则可方便地对参数sita做做大似然估计(M步)
+</li>
+</ul>
+</li>
+<li>原型
+<ul class="org-ul">
+<li>以初始值sita<sup>0为起点</sup>, 迭代执行一下步骤直至收敛
+<ul class="org-ul">
+<li>基于sita<sup>t推断隐变量Z的期望</sup>,记为Z<sup>t</sup>
+</li>
+<li>基于已观测变量X和Z<sup>t对参数sita做极大似然估计</sup>,记为sita<sup>t</sup>+1
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>如果基于sita<sup>t计算隐变量Z的概率分布P</sup>(Z|Z,sita<sup>t</sup>), 而不是取Z的期望
+<ul class="org-ul">
+<li>以当前参数sita<sup>t推断隐变量分布P</sup>(Z|X,sita<sup>t</sup>), 并计算对数似然估计LL(sita|X,Z)关于Z的期望
+<ul class="org-ul">
+<li>Q(sita|sita<sup>t</sup>) = E<sub>Z|X</sub>,sita<sup>t</sup>(LL(sita|X,Z))
+</li>
+</ul>
+</li>
+<li>寻找参数最大化期望似然
+<ul class="org-ul">
+<li>sita<sup>t</sup>+1 = argmax(sita)(Q(sita|sita<sup>t</sup>))
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>坐标下降法
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> 第8章 集成学习</h2>
+<div class="outline-text-2" id="text-8">
+</div><div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1"><span class="section-number-3">8.1</span> 个体与集成</h3>
+<div class="outline-text-3" id="text-8-1">
+<ul class="org-ul">
+<li>集成学习/ensemble learning/多分类器系统/multi-classifier system/基于委员会的学习/committee-based learning
+<ul class="org-ul">
+<li>假设
+<ul class="org-ul">
+<li>个体学习器相互独立, 随着集成中个体分类器数目T的增大, 集成的错误率将指数下降, 最终归于零.(现实情况, 无法相互独立)
+</li>
+</ul>
+</li>
+<li>目标
+<ul class="org-ul">
+<li>个体学习器好而不同
+</li>
+</ul>
+</li>
+<li>两类
+<ul class="org-ul">
+<li>个体学习器间存在强依赖关系, 必须串联生成的序列化方法
+<ul class="org-ul">
+<li>代表: Boosting
+</li>
+</ul>
+</li>
+<li>个体学习器件不存在强依赖关系, 可同时生成的并行化方法
+<ul class="org-ul">
+<li>代表: Bagging和随机森林
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>个体学习器/individual learner
+</li>
+<li>同质/homogeneous
+<ul class="org-ul">
+<li>集成学习只包含相同类型的个体学习器
+</li>
+</ul>
+</li>
+<li>基学习器/base learner
+<ul class="org-ul">
+<li>同质集成中的个体学习器
+</li>
+</ul>
+</li>
+<li>基学习算法/base learning algorithm
+<ul class="org-ul">
+<li>同质集成中的对应算法
+</li>
+</ul>
+</li>
+<li>异质/heterogeneous
+<ul class="org-ul">
+<li>集成中包含不同类型的个体学习器
+</li>
+</ul>
+</li>
+<li>组件学习器/component learner
+<ul class="org-ul">
+<li>异质集成中的个体学习器
+</li>
+</ul>
+</li>
+<li>弱学习器/weak learner
+<ul class="org-ul">
+<li>常指泛化性能略优于随机猜想的学习器
+</li>
+</ul>
+</li>
+<li>投票法/voting
+</li>
+<li>好而不同
+<ul class="org-ul">
+<li>个体学习器有一定的准确性
+</li>
+<li>个体学习器有多样性, 即有差异性
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8-2" class="outline-3">
+<h3 id="sec-8-2"><span class="section-number-3">8.2</span> Boosting</h3>
+<div class="outline-text-3" id="text-8-2">
+<ul class="org-ul">
+<li>Boosting
+<ul class="org-ul">
+<li>工作机制
+<ul class="org-ul">
+<li>先从初始训练集训练出一个基学习器, 再根据基学习器的表现对训练样本分布进行调整, 使得先前基学习器做错的训练样本在后续受到更多关注, 然后基于调整后的样本分布来训练下一个基学习器
+</li>
+<li>重复上步, 直至基学习器数目达到事先指定的值T, 最终将T个基学习器进行加权结合
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>AdaBoost
+<ul class="org-ul">
+<li>加性模型/additive model
+<ul class="org-ul">
+<li>基学习器的线性组合
+</li>
+<li>H(x) = 对t求和(alpha<sub>t</sub>*h<sub>t</sub>(x))
+</li>
+</ul>
+</li>
+<li>指数损失函数/exponential loss function
+<ul class="org-ul">
+<li>l<sub>exp</sub>(H|D) = E<sub>x</sub>~D[exp(-f(x)*H(x))]
+</li>
+</ul>
+</li>
+<li>算法
+<ul class="org-ul">
+<li>输入
+<ul class="org-ul">
+<li>训练集: D = {(x1, y1), &#x2026;, (xm, ym)}
+</li>
+<li>基学习算法Hl
+</li>
+<li>训练轮数T
+</li>
+</ul>
+</li>
+<li>过程
+<ul class="org-ul">
+<li>D1(x) = 1/m
+</li>
+<li>for t = 1,2,&#x2026;,T do
+<ul class="org-ul">
+<li>h<sub>t</sub> = Hl(D, Dt)
+</li>
+<li>epsion<sub>t</sub> = P<sub>x</sub>~Dt(h<sub>t</sub>(x)!=f(x))
+</li>
+<li>if epsion<sub>t</sub> &gt; 0.5 then break
+</li>
+<li>alpha<sub>t</sub> = 1/2*ln((1-epsion<sub>t</sub>)/epsion<sub>t</sub>)
+</li>
+<li>Dt+1(x) =
+<ul class="org-ul">
+<li>Dt(x)/Zt * ?
+<ul class="org-ul">
+<li>? = exp(-alpha<sub>t</sub>), if h<sub>t</sub>(x) = f(x)
+</li>
+<li>? = exp(alpha<sub>t</sub>), if h<sub>t</sub>(x) != f(x)
+</li>
+</ul>
+</li>
+<li>Dt(x)*exp(-alpha<sub>t</sub>*f(x)*h<sub>t</sub>(x))/Zt
+</li>
+</ul>
+</li>
+<li>end for
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>输出
+<ul class="org-ul">
+<li>F(x) = sign(对t求和(alpha<sub>t</sub>*h<sub>t</sub>(x)))
+</li>
+</ul>
+</li>
+<li>说明
+<ul class="org-ul">
+<li>Dt 是分布
+</li>
+<li>Zt 是规范化因子
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>重赋权法/re-weighting
+<ul class="org-ul">
+<li>训练过程中的每一轮, 根据样本分布为每个训练样本重新赋予一个权重
+</li>
+</ul>
+</li>
+<li>重采样法/re-sampling
+<ul class="org-ul">
+<li>每一轮学习中, 根据样本分布对训练集重新进行采样
+</li>
+<li>可避免训练早停
+</li>
+</ul>
+</li>
+<li>特点
+<ul class="org-ul">
+<li>主要关注降低偏差, 能基于泛化性能相当弱的学习器构建出很强的集成
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-8-3" class="outline-3">
+<h3 id="sec-8-3"><span class="section-number-3">8.3</span> Bagging和随机森林</h3>
+<div class="outline-text-3" id="text-8-3">
+</div><div id="outline-container-sec-8-3-1" class="outline-4">
+<h4 id="sec-8-3-1"><span class="section-number-4">8.3.1</span> Bagging</h4>
+<div class="outline-text-4" id="text-8-3-1">
+<ul class="org-ul">
+<li>Bagging
+<ul class="org-ul">
+<li>过程
+<ul class="org-ul">
+<li>基于自助采样法, 获取T个m大小的数据集, 训练T个个体学习器
+</li>
+<li>个体学习器结合: 通常: 分类任务采用简单投票法; 回归任务使用简单平均法
+</li>
+</ul>
+</li>
+<li>特点
+<ul class="org-ul">
+<li>利用外包估计, 减小过拟合风险
+</li>
+<li>主要关注降低方差
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8-3-2" class="outline-4">
+<h4 id="sec-8-3-2"><span class="section-number-4">8.3.2</span> 随机森林</h4>
+<div class="outline-text-4" id="text-8-3-2">
+<ul class="org-ul">
+<li>随机森林/random forest
+<ul class="org-ul">
+<li>使用决策树为基学习算法
+</li>
+<li>以Bagging为基础
+</li>
+<li>基决策树学习过程中, 随机选择包含k个属性的子集, 然后再从这个子集中选择一个最优属性进行划分, k推荐log2(d)
+</li>
+<li>不仅样本扰动, 属性也扰动
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-8-4" class="outline-3">
+<h3 id="sec-8-4"><span class="section-number-3">8.4</span> 结合策略</h3>
+<div class="outline-text-3" id="text-8-4">
+<ul class="org-ul">
+<li>学习器结合的3方面好处(感觉表述不合理)
+<ul class="org-ul">
+<li>从统计的方面来看, 由于学习任务的假设空间往往很大, 可能有多个假设在训练集上达到同等性能, 此时若使用单学习器可能因误选而导致泛化性能不佳, 结合多个学习器则会减小这一风险
+</li>
+<li>从计算的方面来看, 学习算法往往会陷入局部极小, 有的局部极小点所对应的泛化性能可能很糟, 通过多次运行之后进行结合, 可降低陷入糟糕局部极小点的风险
+</li>
+<li>从表示的方面来看, 某些学习任务的真实假设可能不再当前学习算法所考虑的假设空间中, 此时若使用单学习器则肯定无效, 二通过结合多个学习器, 由于相应的假设空间有所扩大, 有可能学得更好的近似
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-8-4-1" class="outline-4">
+<h4 id="sec-8-4-1"><span class="section-number-4">8.4.1</span> 平均法</h4>
+<div class="outline-text-4" id="text-8-4-1">
+<ul class="org-ul">
+<li>平均法/averaging
+<ul class="org-ul">
+<li>个体学习器性能相差较大时宜使用加权平均法
+</li>
+<li>个体学习器性能相近时宜使用简单平均法
+</li>
+</ul>
+</li>
+<li>简单平均法/simple averaging
+<ul class="org-ul">
+<li>H(x) = 1/T*对i求和(h<sub>i</sub>(x))
+</li>
+</ul>
+</li>
+<li>加权平均法/weighted averaging
+<ul class="org-ul">
+<li>H(x) = 对i求和(w<sub>i</sub>*h<sub>i</sub>(x)), w<sub>i</sub>&gt;=0,对i求和(w<sub>i</sub>)=1
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8-4-2" class="outline-4">
+<h4 id="sec-8-4-2"><span class="section-number-4">8.4.2</span> 投票法</h4>
+<div class="outline-text-4" id="text-8-4-2">
+<ul class="org-ul">
+<li>投票法/voting
+</li>
+<li>绝对多数投票法/majorityvoting
+<ul class="org-ul">
+<li>某标记得票数超过半数, 则预测为该标记, 否则拒绝
+</li>
+</ul>
+</li>
+<li>相对多数投票法/plurality voting
+<ul class="org-ul">
+<li>预测为得票数最多的标记, 若同时有多个标记获最高票, 则从中随机选取一个
+</li>
+</ul>
+</li>
+<li>加权投票法/weighted voting
+<ul class="org-ul">
+<li>考虑权重的相对多数投票法/绝对多数投票法
+</li>
+</ul>
+</li>
+<li>硬投票/hard voting
+<ul class="org-ul">
+<li>个体学习器对某个标记只能投{0,1}, 即类标记
+</li>
+</ul>
+</li>
+<li>软投票/soft voting
+<ul class="org-ul">
+<li>个体学习器对某个标记可以投[0,1], 即类概率
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8-4-3" class="outline-4">
+<h4 id="sec-8-4-3"><span class="section-number-4">8.4.3</span> 学习法</h4>
+<div class="outline-text-4" id="text-8-4-3">
+<ul class="org-ul">
+<li>学习法
+<ul class="org-ul">
+<li>当训练数据很多时, 通过另一个学习器来结合的策略
+</li>
+</ul>
+</li>
+<li>Stacking
+<ul class="org-ul">
+<li>从初始数据集训练出初级学习器, 然后"生成"一个新的数据集用于训练次级学习器
+</li>
+<li>新数据集中, 初级学习器的输出被作为样例输入特征, 而初始样本的标记仍被当作样例标记
+</li>
+<li>利用初级学习器未使用的数据训练次级学习器, 避免过拟合
+</li>
+<li>将初级学习器的输出类概率作为次级学习器的输入属性, 用多响应线性回归作为次级学习算法效果较好
+</li>
+</ul>
+</li>
+<li>初级学习器
+<ul class="org-ul">
+<li>个体学习器
+</li>
+</ul>
+</li>
+<li>次级学习器/元学习器/meta-learner
+<ul class="org-ul">
+<li>用于结合的学习器
+</li>
+</ul>
+</li>
+<li>多响应线性回归/multi-response linear regression/MLR
+<ul class="org-ul">
+<li>对每一个类分别进行线性回归,属于该类的训练样例所对应的输出被置于1,其他类置于0
+</li>
+<li>测试示例将被分给输出值最大的类
+</li>
+</ul>
+</li>
+<li>贝叶斯模型平均/Bayes Model Averaging/BMA
+<ul class="org-ul">
+<li>基于后验概率来为不同的模型赋予权重, 可视为加权平均法的一种特殊实现
+</li>
+<li>同Stacking的比较
+<ul class="org-ul">
+<li>理论上, 若数据生成模型恰在当前考虑的模型中, 且数据噪声很少,则BMA不差于Stacking
+</li>
+<li>现实中, 前提难以满足, Stacking通常优于BMA, 鲁棒性比BMA更好, 而且BMA对模型近似误差非常敏感
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-8-5" class="outline-3">
+<h3 id="sec-8-5"><span class="section-number-3">8.5</span> 多样性</h3>
+<div class="outline-text-3" id="text-8-5">
+</div><div id="outline-container-sec-8-5-1" class="outline-4">
+<h4 id="sec-8-5-1"><span class="section-number-4">8.5.1</span> 误差-分歧分解</h4>
+<div class="outline-text-4" id="text-8-5-1">
+<ul class="org-ul">
+<li>分歧/ambiguity
+<ul class="org-ul">
+<li>A(h<sub>i|x</sub>) = (h<sub>i</sub>(x)-H(x))<sup>2</sup>
+</li>
+<li>集成分歧
+<ul class="org-ul">
+<li>考虑加权平均: <b>A</b> = 对i求和(w<sub>i</sub>*A(h<sub>i|x</sub>))
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>误差
+<ul class="org-ul">
+<li>E(h<sub>i|x</sub>) = (f(x)-h<sub>i</sub>(x))<sup>2</sup>
+</li>
+<li>E(H|x) = (f(x)-H(x))<sup>2</sup>
+</li>
+<li>加权平均: <b>E</b> = 对i求和(w<sub>i</sub>*E(h<sub>i|x</sub>))
+</li>
+</ul>
+</li>
+<li>误差-分歧分解/error-ambiguity decomposition
+<ul class="org-ul">
+<li>E = <b>E</b> - <b>A</b>
+</li>
+<li>表明个体学习器准确性越高, 多样性越大, 则集成越好
+</li>
+<li>但推导结果目前只适用于回归学习, 难以直接推广到分类学习任务上去
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8-5-2" class="outline-4">
+<h4 id="sec-8-5-2"><span class="section-number-4">8.5.2</span> 多样性度量</h4>
+<div class="outline-text-4" id="text-8-5-2">
+<ul class="org-ul">
+<li>多样性度量/diversity measure
+<ul class="org-ul">
+<li>用于度量集成中的个体分类器的多样性.
+</li>
+<li>典型做法是考虑个体分类器的两两相似/不相似
+</li>
+</ul>
+</li>
+<li>结果列联表/contingency table
+<ul class="org-ul">
+<li>假设二分类任务
+</li>
+<li>|         | hi = +1 | hi = -1 |
+</li>
+<li>| -&#x2014;&#x2014; | -&#x2014;&#x2014; | -&#x2014;&#x2014; |
+</li>
+<li>| hj = +1 |    a    |    c    |
+</li>
+<li>| hj = -1 |    b    |    d    |
+<ul class="org-ul">
+<li>a 为hi,hj均预测为正类的样本数目, b,c,d以此类推, a+b+c+d = m
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>不合度量/disagreement measure
+<ul class="org-ul">
+<li>dis<sub>ij</sub> = (b+c)/m
+</li>
+<li>dis<sub>ij值域为[0</sub>,1], 值越大则多样性越大
+</li>
+</ul>
+</li>
+<li>相关系数/correlation cofficient
+<ul class="org-ul">
+<li>p<sub>ij</sub> = (ad-bc)/sqrt((a+b)(a+c)(c+d)(b+d))
+</li>
+<li>p<sub>ij的值域为[</sub>-1,1], 若hi和hj无关,则值为0;若hi与hj正向关则值为正,否则为负
+</li>
+</ul>
+</li>
+<li>Q-统计量/Q-statistic
+<ul class="org-ul">
+<li>Q<sub>ij</sub> = (ad-bc)/(ad+bc)
+</li>
+<li>Q<sub>ij与相关系数p</sub><sub>ij的符号相同</sub>, 且|Q<sub>ij|</sub>&gt;=|p<sub>ij|</sub>
+</li>
+</ul>
+</li>
+<li>k-统计量/k-statistic
+<ul class="org-ul">
+<li>k = (p<sub>1</sub>-p<sub>2</sub>)/(1-p<sub>2</sub>)
+</li>
+<li>其中,p<sub>1是两个分类器取得一致的概率</sub>;p<sub>2是两个分类器偶然达成一致的概率</sub>,它们可由数据集D估算:
+<ul class="org-ul">
+<li>p<sub>1</sub> = (a+d)/m
+</li>
+<li>p<sub>2</sub> = [(a+b)(a+c)+(c+d)(b+d)]/m<sup>2</sup>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>k-误差图
+<ul class="org-ul">
+<li>每一对分类器作为图上的一个点
+</li>
+<li>横坐标是这对分类器的k值, 纵坐标是这对分类器的平均误差
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-8-5-3" class="outline-4">
+<h4 id="sec-8-5-3"><span class="section-number-4">8.5.3</span> 多样性增强</h4>
+<div class="outline-text-4" id="text-8-5-3">
+<ul class="org-ul">
+<li>数据样本扰动
+<ul class="org-ul">
+<li>给定初始数据集, 可从中产生不同的数据子集, 再利用不同的数据子集训练出不同的个体学习器.
+</li>
+<li>对"不稳定基学习器"很有效, 例如,决策树,神经网络等
+</li>
+<li>"稳定基学习器"对数据扰动不敏感,例如,线性学习器,支持向量机,朴素贝叶斯,k临近学习器等,需要别的方法.
+</li>
+</ul>
+</li>
+<li>输入属性扰动
+<ul class="org-ul">
+<li>从不同的属性"子空间"训练出个体学习器, 著名算法, 随机子空间/random subspace
+</li>
+</ul>
+</li>
+<li>输出表示扰动
+<ul class="org-ul">
+<li>对输出表示进行操纵以增强多样性
+<ul class="org-ul">
+<li>训练样本的类标记稍作变动, 如"翻转法/flipping output", 随机改变一些训练样本的标记
+</li>
+<li>对输出表示进行转化, 如"输出调制法/output smearing",将分类输出转化为回归输出后构建个体学习器
+</li>
+<li>将原任务拆解成多个可同时求解的子任务,如ECOC法, 利用纠错输出码将多分类任务拆解成一系列二分类任务来训练基学习器
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>算法参数扰动
+<ul class="org-ul">
+<li>随机设置算法参数得到差异比较大的个体学习器, 例如负相关法/negative correlation显示地通过正则化相来强化个体神经网络使用不同的参数
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-8-6" class="outline-3">
+<h3 id="sec-8-6"><span class="section-number-3">8.6</span> 阅读材料</h3>
+<div class="outline-text-3" id="text-8-6">
+<ul class="org-ul">
+<li>集成修剪/ensemble pruning/选择性集成/selective ensenble/集成选择/ensemble selection
+<ul class="org-ul">
+<li>在集成产生之后再试图通过去除一些个体学习器来获得较小的集成
+<ul class="org-ul">
+<li>序列化集成, 减小集成规模后常导致泛化性能下降
+</li>
+<li>并行化集成在减小规模的同时可提升性能
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> 第9章 聚类</h2>
+<div class="outline-text-2" id="text-9">
+</div><div id="outline-container-sec-9-1" class="outline-3">
+<h3 id="sec-9-1"><span class="section-number-3">9.1</span> 聚类任务</h3>
+<div class="outline-text-3" id="text-9-1">
+<ul class="org-ul">
+<li>无监督学习/unsupervised learning
+</li>
+<li>聚类/clustering
+</li>
+<li>簇/cluster
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-9-2" class="outline-3">
+<h3 id="sec-9-2"><span class="section-number-3">9.2</span> 性能度量</h3>
+<div class="outline-text-3" id="text-9-2">
+<ul class="org-ul">
+<li>性能度量/聚类"有效性指标"/validity index
+</li>
+<li>簇内相似度/intra-cluster similarity
+</li>
+<li>簇间相似度/inter-cluster similarity
+</li>
+<li>外部指标/external index
+</li>
+<li>内部指标/internal index
+</li>
+<li>Jaccard系数/Jaccard Coefficient/JC
+</li>
+<li>FM指数/Fowlkes and Mallows Index/FMI
+</li>
+<li>Rand指数/Rand Index/RI
+</li>
+<li>考虑聚类结果的簇划分
+</li>
+<li>DB指数/Davies-Bouldin Index/DBI
+</li>
+<li>Dunn指数/Dunn Index/DI
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> TO-DO</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>过拟合处理技术
+</li>
+<li>平均
+</li>
+<li>常见距离计算方法及应用场景
+</li>
+<li>常见凸函数
+</li>
+<li>类别不平衡处理策略
+</li>
+<li>hessian矩阵
+</li>
+<li>对偶问题(拉格朗日乘子法)
+</li>
+<li>降维方法总结
+</li>
+<li>连续值离散化技术
+</li>
+<li>纯度度量的比较
+</li>
+<li>跳出局部最小的技术
+</li>
+<li>构造学习算法的策略
+</li>
+<li>构造无监督学习的策略
+</li>
+<li>收集更多的神经网络结构
+</li>
+<li>节省训练开销的策略
+</li>
+<li>无监督的常见策略
+</li>
+<li>Boltzmann能量什么含义
+</li>
+<li>支持向量机与对率回归的比较
+<ul class="org-ul">
+<li>使用l<sub>log作为替代函数</sub>
+<ul class="org-ul">
+<li>支持向量机与对率回归目标相近，通常性能相当。
+</li>
+<li>对率回归其输出有自然的概率意义
+</li>
+<li>对率回归可直接多分类
+</li>
+</ul>
+</li>
+<li>hinge损失作为替代函数
+<ul class="org-ul">
+<li>支持向量机的解具有稀疏性
+</li>
+<li>训练样本需求更少，避免过拟合
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>数据挖掘十大算法
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: iwos-ml</p>
+<p class="date">Created: 2021-03-09 二 19:56</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"></p>
+</div>
+</body>
+</html>
